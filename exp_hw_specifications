@@ -1,0 +1,30 @@
+Specification for the experimental infrastructure:\\
+
+\subsection{A disk storage device}
+\begin{itemize}
+\item An IBM ESS Storage Scale System, GPFS v6.1.9.3 running RedHat Enterprise Linux 8.10.
+\item Media: 24 * 7.68TiB NVMe drives for metadata and 1020 * 18TiB NL-SAS drives for data. 
+\item 16 * 200Gbps InfiniBand ports from ESS to data fabric.\\
+\end{itemize}
+
+\subsection{Access nodes -CES-NFS nodes}
+\begin{itemize}
+\item 4 * Dell R6525 nodes running in Ganesha-NFS HA Cluster mode, Storage Scale, GPFS 6.1.9.3, Running RedHat Enterprise Linux 8.10.
+\item Network: 1 * 200Gbps HDR InfiniBand port transporting NFS protocol to the GPFS ESS based storage mounts and to compute nodes over RDMA.
+\item CPU: 64 * AMD EPYC 9124 16-Core Processors - hyperthreading (HT) enabled.
+\item Memory: 396GB DDR5 memory. 
+\end{itemize}
+
+\subsection{A HSM System}
+\begin{itemize}
+\item A HPE DMF7 HSM system that migrates data from the ESS GPFS filesystem based on policy.
+\item An HPE Zero-Watt Storage Spin Down Disk array of 2,232 NL-SAS HDDs.
+\item A tape backend of 16 * IBM TS1160 tape devices across two physical libraries.\\
+\end{itemize}
+
+\subsection{Compute nodes to generate workload}
+\begin{itemize}
+\item 2 * 48 core AMD Genoa EPYC CPUs with 1.5TB of DDR5 memory, running Rocky 8.10 OS.
+\item 1 * 200Gbps HDR InfiniBand port transporting NFS protocol to the GPFS ESS based storage mounts.
+\item SLURM 24.11.3 scheduler coordinates IOR 4.1.0 workload over OpenMPI 4.1.5.\\
+\end{itemize}
