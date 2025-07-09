@@ -18,8 +18,13 @@ Specification for the experimental infrastructure:\\
 \subsection{A HSM System}
 \begin{itemize}
 \item A HPE DMF7 HSM system that migrates data from the ESS GPFS filesystem based on policy.
-\item An HPE Zero-Watt Storage Spin Down Disk array of 2,232 NL-SAS HDDs.
-\item A tape backend of 16 * IBM TS1160 tape devices across two physical libraries.\\
+\item An HPE Zero-Watt Storage Spin Down Disk array consisting of 4 data mover servers and 2,232 NL-SAS HDDs.
+\item 10 * HPDL380 Cassandra DB Compute Nodes each with 512GB of DDR5 memory. 
+\item 5 * Cassandra DB nodes use AMD EPYC 7543P 32-Core CPUs and 5 * use Intel Xeon Gold 6226 CPUs.
+\item Network: 2 * 200Gbps HDR InfiniBand ports transporting CassandraDB traffic and filesystem reflection table chunks. 
+\item Tape library: 2 * IBM TS4500 tape libraries with 4 * dedicated grippers in each library, 6000 slots of capacity in each library.
+\item Tape Library drive array: 11 * IBM TS1160 tape devices in each of the two physical libraries.
+\item Tape Library network: Each tape drive is connected via 16Gbit/sec FC (Fibre Channel) connections.
 \end{itemize}
 
 \subsection{Compute nodes to generate workload}
