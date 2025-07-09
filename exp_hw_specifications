@@ -24,7 +24,7 @@ Specification for the experimental infrastructure:\\
 
 \subsection{Compute nodes to generate workload}
 \begin{itemize}
-\item 2 * 48 core AMD Genoa EPYC CPUs with 1.5TB of DDR5 memory, running Rocky 8.10 OS.
+\item 10 nodes of (2 * 48) core AMD Genoa EPYC CPUs with 1.5TB of DDR5 memory, running Rocky 8.10 OS.
 \item 1 * 200Gbps HDR InfiniBand port transporting NFS protocol to the GPFS ESS based storage mounts.
 \item SLURM 24.11.3 scheduler coordinates IOR 4.1.0 workload over OpenMPI 4.1.5.\\
 \end{itemize}
