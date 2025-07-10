@@ -1,0 +1,24 @@
+SLURM integration for API communication and setup.\\
+
+log\_msg "Starting DMF Prolog Script for User \$SLURM\_USER\_ID."\\
+\# Check if essential variables are set\\
+if [ -z "\$SLURM\_JOB\_ID" ] || [ -z "\$SLURM\_USER\_ID" ] || [ -z "\$SLURM\_SUBMIT\_DIR" ]; then
+\hspace*{5mm}log\_msg "ERROR: Missing required SLURM environment variables (Job ID, User ID, Submit Dir)."
+\hspace*{5mm}exit 0
+fi
+\# Check if the submit directory exists\\
+if [ ! -d "\$SLURM\_SUBMIT\_DIR" ]; then
+\hspace*{5mm}log\_msg "WARNING: Submission directory '\$SLURM\_SUBMIT\_DIR' not found. Skipping DMF policy check."
+ \hspace*{5mm}exit 0
+fi
+\# Check if API token file exists and is readable\\
+if [ ! -r "\$API\_TOKEN\_FILE" ]; then
+\hspace*{5mm}log\_msg "ERROR: Cannot read API token file '\$API\_TOKEN\_FILE'. Check permissions and path."\\
+\hspace*{5mm}exit 0
+fi
+\# Read the API token\\
+API\_TOKEN=\$(cat "\$API\_TOKEN\_FILE")
+if [ -z "\$API\_TOKEN" ]; then
+    log\_msg "ERROR: API token file '\$API\_TOKEN\_FILE' is empty."\\
+    exit 0\\
+fi}
