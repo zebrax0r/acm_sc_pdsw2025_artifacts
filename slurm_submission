@@ -1,0 +1,40 @@
+#!/bin/bash -l
+
+#SBATCH --ntasks=384
+#SBATCH --ntasks-per-core=1
+#SBATCH --mem-per-cpu=16G
+#SBATCH --time=48:00:00
+#SBATCH --qos=normal
+#SBATCH --partition=general
+#SBATCH -o ior_test_run_20250413.txt
+#SBATCH -e ior_errors_20250413.txt
+#SBATCH --job-name=ior_experiment_5
+
+# module loads
+module load foss/2023a
+
+# land in correct directory to run
+cd /scratch/user/xxxxxx/local_software_installs/ior_local_install/bin
+
+# setup run using srun control for MPI coordination, forcing file creation in archiving filesystem location
+
+# Characterize IOPS 
+srun ./ior -t 4k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 8k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 16k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 32k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 64k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+
+# Characterize middle-ground IO mixture 
+srun ./ior -t 4m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 8m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 16m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 32m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 64m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+
+# Characterize large scale IO mixture
+srun ./ior -t 4m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 8m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 16m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 32m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+srun ./ior -t 64m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
