@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{IOR Configuration Parameters}
+\begin{tblr}{
+  width = \linewidth,
+  colspec = {Q[194]Q[502]Q[238]},
+  row{1} = {c},
+  hlines,
+  vlines,
+}
+\textbf{IOR flag} & \textbf{Function}                                                           & \textbf{Setting}  \\
+-s                & Segments per file.                                                          & 16                \\
+-F                & File per process for MPI workers.                                           & True              \\
+-t                & Transfer size.                                                              & 4KiB -- 64MiB~ ~~ \\
+-b                & Block size.                                                                 & 4MiB -- 1GiB      \\
+-e                & perform fsync upon POSIX write close.                                       & True              \\
+-i                & Number of repeat runs.                                                      & 10                \\
+-C                & reorderTasksConstant: changes task ordering to n+1 ordering for readback.   & True              \\
+{[}external] srun & Number of MPI tasks.                                                        & 384               
+\end{tblr}
+\end{table}
