@@ -1,0 +1,3 @@
+Operation,Max(MiB),Min(MiB),Mean(MiB),StdDev,Max(OPs),Min(OPs),Mean(OPs),StdDev,Mean(s),Stonewall(s),Stonewall(MiB),Test#,#Tasks,tPN,reps,fPP,reord,reordoff,reordrand,seed,segcnt,blksiz,xsize,aggs(MiB),API,RefNum
+write,1937.93,1689.24,1813.52,172.28,248201.02,216178.30,232173.58,22056.51,219.39156,NA,NA,0,384,1,10,1,1,1,0,0,16,67108864,8192,393216.0,POSIX,0
+read,28726.42,25476.59,27266.71,2317.67,3676982.15,3260202.79,3490138.50,296661.77,17.84257,NA,NA,0,384,1,10,1,1,1,0,0,16,67108864,8192,393216.0,POSIX,0

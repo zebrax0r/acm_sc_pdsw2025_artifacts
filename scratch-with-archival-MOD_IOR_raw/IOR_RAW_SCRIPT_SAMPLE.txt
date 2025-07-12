@@ -1,0 +1,900 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 09:26:06 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 4k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 09:26:06 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 61.4%   Inodes: 1.0 Mi   Used Inodes: 2.9%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 4096 bytes
+blocksize           : 64 MiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2070.03    529945     0.000553    65536      4.00       0.704669   189.95     145.71     189.96     0   
+read      8040       2058465    0.000002    65536      4.00       0.377915   48.90      48.53      48.91      0   
+write     2140.88    548123     0.000452    65536      4.00       0.308525   183.65     137.65     183.67     1   
+read      50223      12863546   0.000002    65536      4.00       0.356666   7.83       7.46       7.83       1   
+write     2552.92    653580     0.000446    65536      4.00       0.299364   154.02     104.67     154.03     2   
+read      26654      6825358    0.000002    65536      4.00       0.332838   14.75      14.38      14.75      2   
+write     2538.88    649990     0.000542    65536      4.00       0.265420   154.87     106.65     154.88     3   
+read      72770      18644507   0.000002    65536      4.00       0.380459   5.40       5.03       5.40       3   
+write     2279.83    583676     0.000651    65536      4.00       0.287081   172.46     117.97     172.48     4   
+read      70527      18068214   0.000002    65536      4.00       0.322479   5.57       5.22       5.58       4   
+write     2459.24    629602     0.000495    65536      4.00       0.285716   159.88     114.73     159.89     5   
+read      71348      18273370   0.000002    65536      4.00       0.319304   5.51       5.13       5.51       5   
+write     2579.93    660497     0.000517    65536      4.00       0.291451   152.41     104.75     152.41     6   
+read      15288      3914038    0.000002    65536      4.00       0.308441   25.72      25.35      25.72      6   
+write     2005.64    513467     0.000556    65536      4.00       0.291752   196.05     149.90     196.06     7   
+read      67051      17180459   0.000002    65536      4.00       0.342911   5.86       5.50       5.86       7   
+write     2320.64    594106     0.000612    65536      4.00       0.288911   169.44     120.29     169.44     8   
+read      62986      16133777   0.000002    65536      4.00       0.321090   6.24       5.87       6.24       8   
+write     2025.36    518518     0.000477    65536      4.00       0.286595   194.14     147.85     194.15     9   
+read      29890      7653577    0.000002    65536      4.00       0.338858   13.15      12.79      13.16      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2579.93    2005.64    2297.34     215.82  660461.86  513443.72  588117.81   55250.83  172.69577         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864     4096  393216.0 POSIX      0
+read        72770.44    8039.80   47477.56   23888.22 18629231.92 2058188.68 12154255.08 6115383.82   13.89653         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864     4096  393216.0 POSIX      0
+Finished            : Sun Mar 30 09:57:26 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 09:57:30 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 8k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 09:57:30 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 61.9%   Inodes: 1.0 Mi   Used Inodes: 3.3%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 8192 bytes
+blocksize           : 64 MiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2488.97    318599     0.001155    65536      8.00       0.256086   157.98     109.73     157.98     0   
+read      17730      2269901    0.000002    65536      8.00       0.316154   22.17      21.94      22.18      0   
+write     2462.08    315162     0.001134    65536      8.00       0.273500   159.70     113.24     159.71     1   
+read      23009      2945671    0.000003    65536      8.00       0.342524   17.09      16.84      17.09      1   
+write     2181.04    279188     0.001148    65536      8.00       0.254083   180.28     134.84     180.29     2   
+read      19843      2540319    0.000003    65536      8.00       0.307908   19.81      19.59      19.82      2   
+write     2146.59    274776     0.000993    65536      8.00       0.288156   183.17     135.40     183.18     3   
+read      56467      7231394    0.000003    65536      8.00       0.328228   6.96       6.73       6.96       3   
+write     2002.66    256352     0.001223    65536      8.00       0.272858   196.34     153.14     196.35     4   
+read      24408      3124761    0.000003    65536      8.00       0.329117   16.11      15.86      16.11      4   
+write     1990.25    254763     0.001176    65536      8.00       0.309399   197.56     147.84     197.57     5   
+read      67071      8588904    0.000003    65536      8.00       0.299652   5.86       5.62       5.86       5   
+write     2008.29    257067     0.001114    65536      8.00       0.309819   195.79     150.95     195.80     6   
+read      31693      4057567    0.000003    65536      8.00       0.308375   12.40      12.16      12.41      6   
+write     2027.75    259563     0.001183    65536      8.00       0.276047   193.91     148.62     193.92     7   
+read      16505      2112880    0.000003    65536      8.00       0.322215   23.82      23.59      23.82      7   
+write     1887.24    241578     0.001317    65536      8.00       0.302782   208.35     161.08     208.35     8   
+read      39625      5073699    0.000003    65536      8.00       0.363300   9.92       9.68       9.92       8   
+write     2112.92    270466     0.001086    65536      8.00       0.312299   186.09     140.04     186.10     9   
+read      22524      2883579    0.000003    65536      8.00       0.317654   17.45      17.22      17.46      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2488.97    1887.24    2130.78     190.33  318588.01  241567.28  272739.61   24361.88  185.92505         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864     8192  393216.0 POSIX      0
+read        67071.26   16505.25   31887.54   16451.42 8585121.53 2112671.61 4081604.58 2105782.20   15.16320         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864     8192  393216.0 POSIX      0
+Finished            : Sun Mar 30 10:31:15 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 10:31:19 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 16k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 10:31:19 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 62.3%   Inodes: 1.0 Mi   Used Inodes: 3.6%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 16384 bytes
+blocksize           : 64 MiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2062.38    131998     0.002513    65536      16.00      0.278774   190.65     144.16     190.66     0   
+read      21379      1368488    0.000004    65536      16.00      0.323928   18.39      18.22      18.39      0   
+write     1890.05    120967     0.003147    65536      16.00      0.289319   208.04     162.53     208.05     1   
+read      37635      2409161    0.000004    65536      16.00      0.282950   10.45      10.26      10.45      1   
+write     2139.22    136916     0.002304    65536      16.00      0.310784   183.80     131.87     183.81     2   
+read      22020      1409682    0.000004    65536      16.00      0.332649   17.85      17.67      17.86      2   
+write     1948.03    124677     0.002352    65536      16.00      0.281456   201.85     148.43     201.85     3   
+read      21664      1386713    0.000005    65536      16.00      0.278638   18.15      17.97      18.15      3   
+write     2056.72    131636     0.002271    65536      16.00      0.285986   191.18     143.66     191.19     4   
+read      11117      711576     0.000005    65536      16.00      0.268151   35.37      35.20      35.37      4   
+write     2057.03    131658     0.002356    65536      16.00      0.295566   191.14     142.10     191.16     5   
+read      28326      1813153    0.000005    65536      16.00      0.362274   13.88      13.69      13.88      5   
+write     1856.51    118821     0.002133    65536      16.00      0.283613   211.80     168.15     211.80     6   
+read      68736      4401255    0.000005    65536      16.00      0.333674   5.72       5.55       5.72       6   
+write     2449.98    156808     0.001737    65536      16.00      0.273966   160.49     114.55     160.50     7   
+read      21190      1356376    0.000004    65536      16.00      0.369140   18.55      18.37      18.56      7   
+write     2457.79    157303     0.001763    65536      16.00      0.252825   159.98     111.18     159.99     8   
+read      17913      1146633    0.000004    65536      16.00      0.345183   21.95      21.78      21.95      8   
+write     2635.63    168686     0.001757    65536      16.00      0.319349   149.19     101.45     149.19     9   
+read      27015      1729341    0.000004    65536      16.00      0.336757   14.55      14.37      14.56      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2635.63    1856.51    2155.33     252.97  168680.13  118816.39  137941.33   16189.77  184.81977         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    16384  393216.0 POSIX      0
+read        68735.63   11116.88   27699.51   15183.20 4399080.48  711480.57 1772768.81  971724.74   17.48853         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    16384  393216.0 POSIX      0
+Finished            : Sun Mar 30 11:05:17 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 11:05:21 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 32k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 11:05:21 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 62.8%   Inodes: 1.0 Mi   Used Inodes: 3.9%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 32768 bytes
+blocksize           : 64 MiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2584.55    82708      0.003507    65536      32.00      0.269954   152.14     105.67     152.14     0   
+read      49420      1582080    0.000007    65536      32.00      0.316571   7.95       7.79       7.96       0   
+write     2263.37    72430      0.003477    65536      32.00      0.268570   173.72     122.06     173.73     1   
+read      41379      1324431    0.000008    65536      32.00      0.307696   9.50       9.36       9.50       1   
+write     2562.02    81989      0.003471    65536      32.00      0.264926   153.47     104.49     153.48     2   
+read      26704      854612     0.000008    65536      32.00      0.316379   14.72      14.58      14.72      2   
+write     2554.79    81757      0.003546    65536      32.00      0.278908   153.91     106.44     153.91     3   
+read      25111      803656     0.000009    65536      32.00      0.294933   15.66      15.51      15.66      3   
+write     2581.30    82606      0.003441    65536      32.00      0.280455   152.32     106.22     152.33     4   
+read      21213      678950     0.000009    65536      32.00      0.299926   18.53      18.39      18.54      4   
+write     762.51     24401      0.014535    65536      32.00      0.281435   515.68     471.90     515.69     5   
+read      3576.82    114464     0.002316    65536      32.00      0.652850   109.93     109.79     109.93     5   
+write     1671.86    53502      0.007170    65536      32.00      0.280187   235.19     185.86     235.20     6   
+read      37265      1192797    0.000009    65536      32.00      0.348122   10.55      10.38      10.55      6   
+write     2125.74    68027      0.005638    65536      32.00      0.291164   184.97     133.55     184.98     7   
+read      76954      2463225    0.000010    65536      32.00      0.294325   5.11       4.96       5.11       7   
+write     2077.46    66482      0.005766    65536      32.00      0.277961   189.27     139.25     189.28     8   
+read      53133      1700673    0.000009    65536      32.00      0.314984   7.40       7.26       7.40       8   
+write     2073.98    66371      0.005777    65536      32.00      0.286717   189.59     135.71     189.59     9   
+read      71998      2304986    0.000009    65536      32.00      0.304363   5.46       5.30       5.46       9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2584.55     762.51    2125.76     536.73   82705.46   24400.36   68024.24   17175.40  210.03289         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    32768  393216.0 POSIX      0
+read        76954.46    3576.82   40675.48   21756.74 2462542.84  114458.28 1301615.47  696215.60   20.48376         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    32768  393216.0 POSIX      0
+Finished            : Sun Mar 30 11:43:59 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 11:44:04 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 64k -b 64m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 11:44:04 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 63.3%   Inodes: 1.0 Mi   Used Inodes: 4.3%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 65536 bytes
+blocksize           : 64 MiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2119.39    33911      0.011310    65536      64.00      1.09       185.53     129.99     185.53     0   
+read      78063      1249703    0.000019    65536      64.00      0.332784   5.03       4.91       5.04       0   
+write     2040.17    32644      0.011748    65536      64.00      0.275594   192.73     149.55     192.74     1   
+read      31419      502853     0.000017    65536      64.00      0.337389   12.51      12.39      12.52      1   
+write     1781.82    28520      0.011717    65536      64.00      0.282875   220.60     176.04     220.68     2   
+read      14717      235505     0.000017    65536      64.00      0.425304   26.71      26.59      26.72      2   
+write     2069.52    33115      0.011583    65536      64.00      0.280708   189.99     145.07     190.00     3   
+read      43617      697993     0.000014    65536      64.00      0.307054   9.01       8.89       9.02       3   
+write     2039.83    32638      0.011761    65536      64.00      0.286533   192.76     147.31     192.77     4   
+read      23148      370429     0.000020    65536      64.00      0.300729   16.98      16.86      16.99      4   
+write     2061.15    32980      0.011639    65536      64.00      0.765354   190.77     146.80     190.77     5   
+read      29574      473270     0.000016    65536      64.00      0.322135   13.29      13.17      13.30      5   
+write     2045.16    32724      0.011644    65536      64.00      0.247133   192.26     147.53     192.27     6   
+read      20913      334659     0.000017    65536      64.00      0.347379   18.80      18.67      18.80      6   
+write     2067.21    33077      0.011584    65536      64.00      0.293822   190.21     143.43     190.22     7   
+read      22149      354430     0.000016    65536      64.00      0.288700   17.75      17.63      17.75      7   
+write     2062.86    33007      0.011619    65536      64.00      0.289231   190.61     144.82     190.62     8   
+read      21327      341267     0.000021    65536      64.00      0.369553   18.44      18.30      18.44      8   
+write     2035.20    32565      0.011781    65536      64.00      0.328821   193.20     129.01     193.21     9   
+read      15202      243240     0.000019    65536      64.00      0.324022   25.87      25.72      25.87      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2119.39    1781.82    2032.23      86.60   33910.28   28509.11   32515.72    1385.54  193.88049         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    65536  393216.0 POSIX      0
+read        78063.44   14717.16   30012.91   17935.05 1249014.97  235474.52  480206.49  286960.81   16.44290         NA            NA     0    384   1   10   1     1        1         0    0     16 67108864    65536  393216.0 POSIX      0
+Finished            : Sun Mar 30 12:19:21 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 12:19:26 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 4m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 12:19:26 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 63.8%   Inodes: 1.0 Mi   Used Inodes: 4.6%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 4 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 768 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2063.14    515.80     0.744343    131072     4096       0.307692   381.17     264.00     381.18     0   
+read      17135      4284       0.001377    131072     4096       0.322289   45.89      45.64      45.90      0   
+write     1682.65    420.67     0.856724    131072     4096       0.292718   467.37     380.58     467.38     1   
+read      16447      4112       0.001128    131072     4096       0.567885   47.81      47.56      47.82      1   
+write     1824.71    456.19     0.841646    131072     4096       0.278069   430.98     328.27     430.99     2   
+read      21200      5301       0.001207    131072     4096       0.305787   37.09      36.85      37.10      2   
+write     1467.03    366.76     1.05        131072     4096       0.297114   536.07     446.05     536.07     3   
+read      10564      2641.18    0.001333    131072     4096       0.374740   74.44      74.20      74.44      3   
+write     1662.80    415.71     0.923408    131072     4096       0.277410   472.95     380.00     472.96     4   
+read      21876      5469       0.001239    131072     4096       0.380234   35.95      35.68      35.95      4   
+write     1627.15    406.79     0.756538    131072     4096       0.285903   483.31     396.79     483.32     5   
+read      18561      4641       0.001201    131072     4096       0.433017   42.36      42.08      42.37      5   
+write     1747.60    436.91     0.762233    131072     4096       0.482005   450.00     347.45     450.01     6   
+read      13644      3411.22    0.001215    131072     4096       0.552494   57.64      57.36      57.64      6   
+write     1509.86    377.47     1.02        131072     4096       0.275718   520.86     423.49     520.86     7   
+read      18633      4659       0.001357    131072     4096       0.371729   42.20      41.94      42.21      7   
+write     1103.45    275.87     1.39        131072     4096       0.258953   712.70     601.37     712.70     8   
+read      26972      6744       0.001228    131072     4096       0.518117   29.15      28.88      29.16      8   
+write     1665.36    416.35     0.759728    131072     4096       0.301249   472.22     382.52     472.23     9   
+read      11274      2818.65    0.001248    131072     4096       0.602429   69.75      69.45      69.76      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2063.14    1103.45    1635.38     237.15     515.79     275.86     408.84      59.29  492.76924         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728  4194304  786432.0 POSIX      0
+read        26971.53   10564.22   17630.62    4772.53    6742.88    2641.06    4407.65    1193.13   48.23303         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728  4194304  786432.0 POSIX      0
+Finished            : Sun Mar 30 13:49:55 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 13:50:00 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 8m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 13:50:00 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 64.8%   Inodes: 1.0 Mi   Used Inodes: 5.0%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 8 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 768 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1968.50    246.07     1.56        131072     8192       0.276851   399.50     306.03     399.51     0   
+read      24855      3107.10    0.002704    131072     8192       0.306349   31.64      31.39      31.64      0   
+write     871.49     108.94     1.56        131072     8192       0.259373   902.39     751.17     902.40     1   
+read      18211      2276.65    0.002519    131072     8192       0.660610   43.18      42.92      43.18      1   
+write     1929.11    241.14     1.59        131072     8192       0.282453   407.66     303.32     407.67     2   
+read      20265      2533.31    0.001888    131072     8192       0.343897   38.80      38.58      38.81      2   
+write     1802.25    225.28     1.70        131072     8192       0.303152   436.36     318.76     436.36     3   
+read      16508      2063.69    0.001812    131072     8192       0.358456   47.64      47.37      47.64      3   
+write     1792.14    224.02     1.71        131072     8192       0.309557   438.81     301.90     438.82     4   
+read      22277      2784.94    0.002704    131072     8192       0.316610   35.30      34.99      35.30      4   
+write     1929.09    241.14     1.59        131072     8192       0.290339   407.67     307.44     407.67     5   
+read      20219      2527.62    0.002546    131072     8192       0.380250   38.89      38.60      38.90      5   
+write     1758.22    219.78     1.75        131072     8192       0.295603   447.28     336.44     447.29     6   
+read      18829      2353.87    0.002715    131072     8192       0.408320   41.76      41.49      41.77      6   
+write     1711.10    213.89     1.51        131072     8192       0.317611   459.59     353.33     459.61     7   
+read      19284      2410.61    0.002473    131072     8192       0.271247   40.78      40.49      40.78      7   
+write     1879.91    235.00     1.63        131072     8192       0.295034   418.32     310.38     418.33     8   
+read      25239      3155.14    0.002317    131072     8192       0.464613   31.16      30.87      31.16      8   
+write     1313.67    164.21     1.86        131072     8192       0.282295   598.65     495.45     598.65     9   
+read      25796      3224.69    0.002504    131072     8192       0.324839   30.48      30.18      30.49      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1968.50     871.49    1695.55     326.71     246.06     108.94     211.94      40.84  491.63109         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728  8388608  786432.0 POSIX      0
+read        25795.88   16507.68   21148.38    3066.19    3224.49    2063.46    2643.55     383.27   37.96641         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728  8388608  786432.0 POSIX      0
+Finished            : Sun Mar 30 15:18:34 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 15:18:39 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 16m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 15:18:39 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 65.8%   Inodes: 1.0 Mi   Used Inodes: 5.3%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 16 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 768 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1895.78    118.49     3.24        131072     16384      0.289484   414.83     292.52     414.83     0   
+read      14741      921.50     0.211066    131072     16384      0.050701   53.34      53.11      53.35      0   
+write     1676.94    104.81     3.66        131072     16384      0.308350   468.96     353.61     468.97     1   
+read      22995      1437.31    0.004641    131072     16384      0.645693   34.20      33.90      34.20      1   
+write     1918.88    119.93     3.20        131072     16384      0.298357   409.84     323.63     409.84     2   
+read      22754      1422.23    0.005799    131072     16384      0.584816   34.56      34.27      34.56      2   
+write     1329.69    83.11      4.62        131072     16384      0.292929   591.44     490.26     591.44     3   
+read      27313      1707.25    0.004931    131072     16384      0.552480   28.79      28.47      28.79      3   
+write     1574.76    98.42      3.01        131072     16384      0.432758   499.39     351.52     499.40     4   
+read      14135      883.51     0.005255    131072     16384      0.359194   55.63      55.32      55.64      4   
+write     2012.32    125.77     3.05        131072     16384      0.281161   390.80     301.37     390.81     5   
+read      10809      675.65     0.005977    131072     16384      0.260611   72.75      72.53      72.76      5   
+write     1940.14    121.26     3.03        131072     16384      0.293040   405.33     273.55     405.35     6   
+read      11949      746.87     0.005882    131072     16384      0.347173   65.81      65.49      65.81      6   
+write     1667.49    104.23     3.68        131072     16384      0.287447   471.58     359.80     471.63     7   
+read      15001      937.59     0.005973    131072     16384      0.309452   52.42      52.17      52.43      7   
+write     1254.44    78.40      4.90        131072     16384      0.327592   626.90     521.75     626.92     8   
+read      17969      1123.18    0.005708    131072     16384      0.436999   43.76      43.42      43.77      8   
+write     1493.45    93.34      4.11        131072     16384      0.317435   526.58     419.01     526.59     9   
+read      14896      931.05     0.003967    131072     16384      0.336181   52.79      52.50      52.79      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2012.32    1254.44    1676.39     251.29     125.77      78.40     104.77      15.71  480.57685         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 16777216  786432.0 POSIX      0
+read        27313.10   10809.25   17256.27    5111.34    1707.07     675.58    1078.52     319.46   49.40982         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 16777216  786432.0 POSIX      0
+Finished            : Sun Mar 30 16:47:18 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 16:47:22 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 32m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 16:47:22 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 66.7%   Inodes: 1.0 Mi   Used Inodes: 5.7%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 32 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 768 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1905.31    59.54      6.45        131072     32768      0.373939   412.75     310.25     412.76     0   
+read      12590      393.49     0.011923    131072     32768      0.321126   62.46      62.15      62.46      0   
+write     1623.65    50.74      7.57        131072     32768      0.547246   484.36     379.42     484.36     1   
+read      23475      733.66     0.010155    131072     32768      0.326610   33.50      33.26      33.50      1   
+write     1745.69    54.55      7.02        131072     32768      0.312010   450.49     341.27     450.50     2   
+read      22617      706.86     0.013269    131072     32768      0.536528   34.77      34.52      34.77      2   
+write     1619.30    50.60      6.04        131072     32768      0.304735   485.65     379.93     485.66     3   
+read      14351      448.68     0.012725    131072     32768      0.644380   54.77      54.51      54.80      3   
+write     1533.28    47.92      8.01        131072     32768      0.305532   512.90     408.16     512.91     4   
+read      17839      557.48     0.435915    131072     32768      0.318348   44.08      43.80      44.09      4   
+write     1818.21    56.82      6.50        131072     32768      0.290186   432.52     325.30     432.53     5   
+read      24799      775.07     0.013075    131072     32768      0.304319   31.71      31.29      31.71      5   
+write     1707.80    53.37      7.19        131072     32768      0.275368   460.49     358.33     460.49     6   
+read      20198      631.24     0.011981    131072     32768      0.326582   38.93      38.60      38.94      6   
+write     1448.78    45.28      8.48        131072     32768      0.313882   542.82     438.11     542.82     7   
+read      16844      526.43     0.013343    131072     32768      0.707700   46.68      46.42      46.69      7   
+write     1603.16    50.10      6.04        131072     32768      0.272974   490.55     384.66     490.55     8   
+read      17226      538.40     0.012876    131072     32768      0.290209   45.65      45.31      45.65      8   
+write     1614.38    50.45      7.61        131072     32768      0.285153   487.13     399.14     487.14     9   
+read      18231      569.76     0.013225    131072     32768      0.583497   43.13      42.82      43.14      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1905.31    1448.78    1661.96     127.97      59.54      45.27      51.94       4.00  475.97271         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 33554432  786432.0 POSIX      0
+read        24799.46   12589.98   18817.03    3745.32     774.98     393.44     588.03     117.04   43.57499         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 33554432  786432.0 POSIX      0
+Finished            : Sun Mar 30 18:14:16 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Sun Mar 30 18:14:21 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 64m -b 128m -s 16 -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Sun Mar 30 18:14:21 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 67.7%   Inodes: 1.0 Mi   Used Inodes: 6.0%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 64 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 768 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1711.90    26.75      14.35       131072     65536      0.479473   459.38     351.08     459.39     0   
+read      14668      229.21     0.028452    131072     65536      0.376640   53.61      53.28      53.62      0   
+write     1891.81    29.56      12.57       131072     65536      0.293245   415.69     281.80     415.70     1   
+read      18295      285.87     0.026361    131072     65536      0.532052   42.98      42.59      42.99      1   
+write     2038.83    31.86      12.05       131072     65536      0.284397   385.72     273.28     385.73     2   
+read      17350      271.11     0.027671    131072     65536      0.313052   45.32      44.94      45.33      2   
+write     1995.48    31.18      12.31       131072     65536      0.297756   394.09     286.33     394.11     3   
+read      17114      267.44     0.028230    131072     65536      0.318939   45.95      45.65      45.95      3   
+write     1852.26    28.94      13.27       131072     65536      0.299450   424.57     312.00     424.58     4   
+read      18423      287.89     0.026636    131072     65536      0.326332   42.68      42.31      42.69      4   
+write     1869.50    29.21      12.18       131072     65536      0.284954   420.65     319.15     420.66     5   
+read      10982      171.62     0.027599    131072     65536      0.376987   71.60      71.27      71.61      5   
+write     1180.21    18.44      20.82       131072     65536      0.544276   666.33     579.35     666.35     6   
+read      14753      230.55     0.023684    131072     65536      0.316643   53.30      52.93      53.31      6   
+write     1418.52    22.16      17.32       131072     65536      0.312855   554.39     449.50     554.40     7   
+read      12850      200.79     0.024360    131072     65536      0.355723   61.20      60.85      61.20      7   
+write     27.03      0.422352   18.19       131072     65536      0.264746   29094      28993      29094      8   
+read      3771       58.93      5.38        131072     65536      3.15       208.51     208.27     208.53     8   
+write     2241.37    35.02      10.55       131072     65536      0.300730   350.87     210.25     350.87     9   
+read      29110      454.89     0.028135    131072     65536      0.416192   27.01      26.58      27.02      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2241.37      27.03    1622.69     606.01      35.02       0.42      25.35       9.47 3316.60158         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 67108864  786432.0 POSIX      0
+read        29110.15    3771.36   15731.61    6110.05     454.85      58.93     245.81      95.47   65.22320         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 67108864  786432.0 POSIX      0
+Finished            : Mon Mar 31 03:38:19 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Mon Mar 31 03:38:23 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 4m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Mon Mar 31 03:38:23 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 59.1%   Inodes: 1.0 Mi   Used Inodes: 0.1%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 4 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1827.37    456.85     0.684165    1048576    4096       0.326707   215.18     162.72     215.18     0   
+read      61078      15272      0.001141    1048576    4096       0.584574   6.44       6.31       6.44       0   
+write     2564.13    641.07     0.597460    1048576    4096       0.329116   153.34     112.11     153.35     1   
+read      61536      15387      0.000708    1048576    4096       0.340106   6.39       6.27       6.39       1   
+write     1766.54    441.67     0.601410    1048576    4096       0.310551   222.57     182.66     222.59     2   
+read      72576      18151      0.001105    1048576    4096       0.474614   5.42       5.28       5.42       2   
+write     2569.72    642.47     0.544498    1048576    4096       0.305640   153.01     107.81     153.02     3   
+read      48695      12177      0.000792    1048576    4096       0.581185   8.07       7.95       8.08       3   
+write     2597.61    649.43     0.503439    1048576    4096       0.316472   151.37     109.13     151.38     4   
+read      56367      14097      0.001020    1048576    4096       0.335957   6.97       6.84       6.98       4   
+write     2289.33    572.36     0.635780    1048576    4096       0.286226   171.75     124.19     171.76     5   
+read      71703      17936      0.000733    1048576    4096       0.509006   5.48       5.37       5.48       5   
+write     2513.44    628.38     0.600556    1048576    4096       0.322434   156.44     105.91     156.45     6   
+read      56702      14179      0.001320    1048576    4096       0.385504   6.93       6.79       6.93       6   
+write     2051.73    512.97     0.449216    1048576    4096       0.323223   191.64     117.10     191.65     7   
+read      65021      16262      0.000975    1048576    4096       0.378919   6.05       5.93       6.05       7   
+write     1863.53    465.90     0.655455    1048576    4096       0.327896   211.00     170.56     211.01     8   
+read      68835      17213      0.000801    1048576    4096       0.354904   5.71       5.59       5.71       8   
+write     2327.42    581.88     0.574373    1048576    4096       0.345931   168.94     106.23     168.95     9   
+read      61862      15472      0.001135    1048576    4096       0.387329   6.35       6.23       6.36       9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2597.61    1766.54    2237.08     315.91     649.40     441.64     559.27      78.98  179.53305         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824  4194304  393216.0 POSIX      0
+read        72576.37   48695.25   62437.56    7055.84   18144.09   12173.81   15609.39    1763.96    6.38320         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824  4194304  393216.0 POSIX      0
+Finished            : Mon Mar 31 04:09:38 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Mon Mar 31 04:09:42 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 8m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Mon Mar 31 04:09:42 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 59.5%   Inodes: 1.0 Mi   Used Inodes: 0.5%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 8 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2049.32    256.17     1.12        1048576    8192       0.320105   191.87     148.02     191.88     0   
+read      75839      9483       0.002199    1048576    8192       0.319996   5.18       5.05       5.18       0   
+write     2078.00    259.76     1.02        1048576    8192       0.267464   189.22     144.13     189.23     1   
+read      72770      9100       0.001891    1048576    8192       0.359992   5.40       5.28       5.40       1   
+write     2363.87    295.49     0.918557    1048576    8192       0.324132   166.34     126.11     166.34     2   
+read      20901      2613.07    0.002204    1048576    8192       0.648356   18.81      18.70      18.81      2   
+write     2239.07    279.90     1.37        1048576    8192       0.320844   175.61     137.05     175.62     3   
+read      33720      4216       0.001671    1048576    8192       0.406243   11.66      11.55      11.66      3   
+write     1845.39    230.68     1.38        1048576    8192       0.284288   213.07     168.25     213.08     4   
+read      33402      4176       0.002037    1048576    8192       0.744669   11.77      11.63      11.77      4   
+write     1950.36    243.80     0.990930    1048576    8192       0.304362   201.61     158.22     201.61     5   
+read      74261      9289       0.002428    1048576    8192       0.356206   5.29       5.15       5.30       5   
+write     2137.11    267.15     1.07        1048576    8192       0.325693   183.99     140.74     183.99     6   
+read      67174      8402       0.002007    1048576    8192       0.494562   5.85       5.73       5.85       6   
+write     2266.58    283.33     1.35        1048576    8192       0.315371   173.48     126.91     173.48     7   
+read      27044      3381.12    0.002540    1048576    8192       1.15       14.54      14.41      14.54      7   
+write     2160.74    270.11     0.971693    1048576    8192       0.399340   181.97     137.07     181.98     8   
+read      21197      2650.27    0.002114    1048576    8192       1.29       18.55      18.43      18.55      8   
+write     2396.41    299.58     1.16        1048576    8192       0.335035   164.07     108.32     164.09     9   
+read      21059      2632.73    0.001531    1048576    8192       0.994715   18.67      18.53      18.67      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2396.41    1845.39    2148.68     166.19     299.55     230.67     268.59      20.77  184.13031         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824  8388608  393216.0 POSIX      0
+read        75838.60   20900.67   44736.72   23182.00    9479.82    2612.58    5592.09    2897.75   11.57460         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824  8388608  393216.0 POSIX      0
+Finished            : Mon Mar 31 04:42:35 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Mon Mar 31 04:42:39 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 16m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Mon Mar 31 04:42:39 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 60.0%   Inodes: 1.0 Mi   Used Inodes: 0.8%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 16 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1782.27    111.39     1.72        1048576    16384      0.326610   220.62     166.12     220.63     0   
+read      21858      1366.29    0.005705    1048576    16384      0.605928   17.99      17.87      17.99      0   
+write     2568.90    160.56     2.32        1048576    16384      0.308170   153.06     107.18     153.07     1   
+read      24382      1524.08    0.003881    1048576    16384      0.929112   16.13      16.00      16.13      1   
+write     2594.64    162.17     1.78        1048576    16384      0.328624   151.54     106.15     151.55     2   
+read      17048      1065.62    0.005358    1048576    16384      1.05       23.06      22.92      23.07      2   
+write     2286.96    142.94     1.85        1048576    16384      0.323301   171.93     131.88     171.94     3   
+read      24476      1530.02    0.004275    1048576    16384      1.03       16.06      15.93      16.07      3   
+write     1919.47    119.97     1.80        1048576    16384      0.351858   204.85     152.13     204.86     4   
+read      24945      1559.46    0.003337    1048576    16384      0.564906   15.76      15.62      15.76      4   
+write     1717.65    107.36     2.64        1048576    16384      0.304313   228.92     183.79     228.93     5   
+read      73917      4622       0.004995    1048576    16384      0.380158   5.32       5.19       5.32       5   
+write     1305.28    81.58      4.71        1048576    16384      0.271746   301.25     256.94     301.25     6   
+read      27228      1702.11    0.004698    1048576    16384      0.882331   14.44      14.29      14.44      6   
+write     1914.77    119.68     2.18        1048576    16384      0.328091   205.35     159.93     205.36     7   
+read      24710      1544.63    0.005417    1048576    16384      1.03       15.91      15.77      15.91      7   
+write     1809.96    113.13     2.26        1048576    16384      0.329160   217.25     166.05     217.25     8   
+read      23917      1495.07    0.004925    1048576    16384      1.39       16.44      16.29      16.44      8   
+write     1987.53    124.23     2.72        1048576    16384      0.301207   197.83     155.22     197.84     9   
+read      14711      919.57     0.004946    1048576    16384      0.591501   26.73      26.58      26.73      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2594.64    1305.28    1988.74     376.58     162.16      81.58     124.30      23.54  205.26686         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 16777216  393216.0 POSIX      0
+read        73917.16   14711.46   27719.34   15826.50    4619.82     919.47    1732.46     989.16   16.78541         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 16777216  393216.0 POSIX      0
+Finished            : Mon Mar 31 05:19:55 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Mon Mar 31 05:19:59 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 32m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Mon Mar 31 05:19:59 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 60.5%   Inodes: 1.0 Mi   Used Inodes: 1.2%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 32 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2081.76    65.06      3.82        1048576    32768      0.347065   188.87     145.65     188.89     0   
+read      16793      524.93     0.011497    1048576    32768      1.46       23.41      23.25      23.42      0   
+write     1922.11    60.07      4.27        1048576    32768      0.351495   204.56     145.35     204.57     1   
+read      23252      726.76     0.011118    1048576    32768      0.415462   16.91      16.77      16.91      1   
+write     2354.33    73.58      4.98        1048576    32768      0.318681   167.01     115.86     167.02     2   
+read      24895      778.16     0.009441    1048576    32768      0.791037   15.79      15.61      15.79      2   
+write     2589.48    80.92      4.54        1048576    32768      0.329539   151.85     100.47     151.85     3   
+read      19314      603.66     0.011457    1048576    32768      1.43       20.36      20.21      20.36      3   
+write     2362.13    73.82      5.20        1048576    32768      0.319560   166.46     107.23     166.47     4   
+read      14990      468.54     0.010426    1048576    32768      3.49       26.23      26.11      26.23      4   
+write     1874.47    58.58      4.46        1048576    32768      0.342905   209.76     165.89     209.77     5   
+read      16572      517.90     0.008240    1048576    32768      0.458140   23.73      23.56      23.73      5   
+write     2091.80    65.37      5.87        1048576    32768      0.332293   187.97     133.63     187.98     6   
+read      28793      899.99     0.012371    1048576    32768      0.546276   13.65      13.48      13.66      6   
+write     2285.77    71.43      3.65        1048576    32768      0.295922   172.02     122.52     172.03     7   
+read      28396      887.62     0.008785    1048576    32768      0.464921   13.84      13.68      13.85      7   
+write     2563.17    80.10      4.08        1048576    32768      0.316573   153.40     99.01      153.41     8   
+read      59584      1862.84    0.011278    1048576    32768      0.370069   6.60       6.45       6.60       8   
+write     2388.92    74.66      4.61        1048576    32768      0.307636   164.59     105.87     164.60     9   
+read      20667      646.00     0.009759    1048576    32768      0.437975   19.02      18.89      19.03      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2589.48    1874.47    2251.39     236.47      80.92      58.58      70.36       7.39  176.65894         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 33554432  393216.0 POSIX      0
+read        59583.80   14989.61   25325.49   12303.10    1861.99     468.43     791.42     384.47   17.95712         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 33554432  393216.0 POSIX      0
+Finished            : Mon Mar 31 06:02:53 2025
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Mon Mar 31 06:02:57 2025
+Command line        : /scratch/user/uqjcarr1/local_software_installs/ior_local_install/bin/./ior -t 64m -b 1g -F -C -e -i 10 -o /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+Machine             : Linux bun083
+TestID              : 0
+StartTime           : Mon Mar 31 06:02:57 2025
+Path                : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob.00000000
+FS                  : 808.3 TiB   Used FS: 61.0%   Inodes: 1.0 Mi   Used Inodes: 1.5%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /QRISdata/Q6680/ior_benchmarking_20250323/testfiles.blob
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 384
+tasks               : 384
+clients per node    : 1
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 10
+xfersize            : 64 MiB
+blocksize           : 1 GiB
+aggregate filesize  : 384 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2572.74    40.20      9.53        1048576    65536      0.329222   152.83     96.88      152.84     0   
+read      19672      307.42     0.023538    1048576    65536      0.671426   19.99      19.82      19.99      0   
+write     2181.15    34.08      10.27       1048576    65536      0.341929   180.27     122.69     180.28     1   
+read      18463      288.52     0.024820    1048576    65536      1.76       21.30      21.09      21.30      1   
+write     1930.86    30.17      7.66        1048576    65536      0.331709   203.64     149.39     203.65     2   
+read      53798      840.77     0.024420    1048576    65536      0.351087   7.31       7.15       7.31       2   
+write     2407.45    37.62      7.12        1048576    65536      0.306954   163.32     117.04     163.33     3   
+read      21980      343.50     0.022116    1048576    65536      0.339673   17.89      17.73      17.89      3   
+write     2227.58    34.81      7.31        1048576    65536      0.305024   176.51     128.51     176.52     4   
+read      52365      818.38     0.026284    1048576    65536      0.304574   7.51       7.31       7.51       4   
+write     2403.94    37.56      10.20       1048576    65536      0.302768   163.57     113.88     163.57     5   
+read      26475      413.74     0.021622    1048576    65536      0.335915   14.85      14.67      14.85      5   
+write     2554.56    39.92      9.56        1048576    65536      0.295385   153.92     105.60     153.93     6   
+read      65345      1021.27    0.024898    1048576    65536      0.321786   6.02       5.88       6.02       6   
+write     1940.18    30.32      9.00        1048576    65536      0.312782   202.66     152.89     202.67     7   
+read      21679      338.83     0.027739    1048576    65536      0.708093   18.13      17.99      18.14      7   
+write     1984.92    31.02      12.37       1048576    65536      0.302392   198.09     150.52     198.10     8   
+read      26973      421.55     0.019751    1048576    65536      0.380606   14.57      14.40      14.58      8   
+write     2327.14    36.36      7.36        1048576    65536      0.306165   168.96     123.51     168.97     9   
+read      21770      340.19     0.024173    1048576    65536      0.752710   18.06      17.87      18.06      9   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2572.74    1930.86    2253.05     229.04      40.20      30.17      35.20       3.58  176.38624         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 67108864  393216.0 POSIX      0
+read        65344.68   18462.69   32851.85   16422.87    1021.01     288.48     513.31     256.61   14.56435         NA            NA     0    384   1   10   1     1        1         0    0      1 1073741824 67108864  393216.0 POSIX      0
+Finished            : Mon Mar 31 06:35:02 2025
