@@ -1,5 +1,10 @@
 %%**********************************************************
-%% SLURM endpoint construction for DMF7 communication.\\
+%% SLURM endpoint construction for DMF7 communication
+%% SLURM must the request to the DMF7 Policy engine. For
+%% this purpose, we use SLURM’s prolog function in conjunction
+%% with DMF7’s API endpoint. We now document the SLURM
+%% prolog function to pass the policy request to DMF7 for
+%% consideration and execution, starting with global variables.
 %%**********************************************************
 
 DMF_API_ENDPOINT="https://dmf-mgmt/api/v1/policies"
@@ -12,6 +17,9 @@ JobID $SLURM_JOB_ID - $1" >> "$LOG_FILE"
 
 %%**********************************************************
 %% JSON Payload Construction.\\
+%% The following is the JSON payload construction transferred
+%% via Curl from the SLURM prolog execution to the DMF7
+%% API endpoint.
 %%**********************************************************
 
 POLICY_NAME="$POLICY_NAME_PREFIX-$SLURM_JOB_ID"
@@ -45,7 +53,6 @@ HTTP_RESPONSE_CODE=$(curl -s -o /dev/null -w
  -H "Content-Type: application/json" \
  -d "$JSON_PAYLOAD" \
  "$POLICY_URL")
-
 
 %%**********************************************************
 %% Finally, we check for a conflicting (existing) policy and
