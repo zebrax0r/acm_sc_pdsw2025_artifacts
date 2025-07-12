@@ -1,0 +1,3 @@
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1469.25     820.71    1135.77     231.45      22.96      12.82      17.75       3.62  720.67523         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 67108864  786432.0 POSIX      0
+read        32151.53   10039.28   21879.11    6184.44     502.37     156.86     341.86      96.63   39.80362         NA            NA     0    384   1   10   1     1        1         0    0     16 134217728 67108864  786432.0 POSIX      0
