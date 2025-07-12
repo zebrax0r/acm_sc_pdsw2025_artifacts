@@ -1,4 +1,79 @@
-SLURM integration for API communication and setup.\\
+%%**********************************************************
+%% SLURM endpoint construction for DMF7 communication.\\
+%%**********************************************************
+
+DMF_API_ENDPOINT="https://dmf-mgmt/api/v1/policies"
+API_TOKEN_FILE="/etc/slurm/dmf_api_token"
+NO_ARCHIVE_XATTR_KEY="blobfile"
+POLICY_NAME_PREFIX="slurm-noarchive-blobfile"
+LOG_FILE="/var/log/slurm/dmf_prolog.log"
+log_msg() echo "$(date) ’+%Y-%m-%d %H:%M:%S’) -
+JobID $SLURM_JOB_ID - $1" >> "$LOG_FILE"
+
+%%**********************************************************
+%% JSON Payload Construction.\\
+%%**********************************************************
+
+POLICY_NAME="$POLICY_NAME_PREFIX-$SLURM_JOB_ID"
+TARGET_PATH="$SLURM_SUBMIT_DIR"
+JSON_PAYLOAD=$(cat <<EOF)
+   "policyName": "$POLICY_NAME",
+   "description":
+      "target":
+      "path": "$TARGET_PATH",
+      "recursive": true
+"rule":
+   "condition":
+   "type": "xattr",
+   "key": "$NO_ARCHIVE_XATTR_KEY",
+   "operator": "exists",
+ "action": "PREVENT_ARCHIVE"
+, "enabled": true
+EOF
+
+%% **********************************************************
+%% We construct the full URL for the policy and use the PUT
+%% API call to send the request to the API endpoint.\\
+%% **********************************************************
+
+POLICY_URL="$DMF_API_ENDPOINT/$POLICY_NAME"
+log_msg "Sending request to: $POLICY_URL"
+HTTP_RESPONSE_CODE=$(curl -s -o /dev/null -w
+"%{http_code}" \
+ -X PUT \
+ -H "Authorization: Bearer $API_TOKEN" \
+ -H "Content-Type: application/json" \
+ -d "$JSON_PAYLOAD" \
+ "$POLICY_URL")
+
+
+%%**********************************************************
+%% Finally, we check for a conflicting (existing) policy and
+%% that the response has been sent successfully. We present
+%% diagnostic outputs for errors.\\
+%% **********************************************************
+
+if [ "$HTTP_RESPONSE_CODE" -ge 200 ] && [
+"$HTTP_RESPONSE_CODE" -lt 300 ]; then
+  log_msg "Successfully set/updated DMF
+policy ’$POLICY_NAME’. API response code:
+$HTTP_RESPONSE_CODE."
+elif [ "$HTTP_RESPONSE_CODE" == 409 ]; then
+  log_msg "DMF policy ’$POLICY_NAME’ likely already
+exists (Conflict). Assuming OK. API response code:
+$HTTP_RESPONSE_CODE."
+else
+  log_msg "ERROR: Failed to set/update DMF
+policy ’$POLICY_NAME’. API response code:
+$HTTP_RESPONSE_CODE."
+  # exit 1
+fi
+log_msg "DMF Prolog Script finished."
+exit 0
+
+%%**********************************************************
+%% SLURM integration for API communication and setup.\\
+%%**********************************************************
 
 log\_msg "Starting DMF Prolog Script for User \$SLURM\_USER\_ID."\\
 \# Check if essential variables are set\\
