@@ -1,0 +1,27 @@
+## Fileset rules ARCHIVAL HEAVY ##
+fileset all: file.age > 15 seconds; fileset
+large: (file.space > 100gb) and (file.age > 15
+seconds); fileset small: (file.space <= 100gb)
+and (file.age > 15 seconds); reposet zws_tape:
+[’mg4’, ’p4_ls.t1a’, ’s4_ls.t1b’]; reposet
+tape_only: [’p4_ls.t1a’, ’s4_ls.t1b’]; policy
+05_migrate_policy: run [new_migrate_rule]
+continuous;
+
+## Fileset rules - EXTENDED ATTRIBUTE (XATTR MAP) ## 
+!path.xattr =
+’q6680’, path.xattr[’05’][’q6680’]
+= path_migrate_rule policy
+05_migrate_policy: run [path_migate_rule]
+continuous;
+
+## Fileset rules ARCHIVAL MOD##
+fileset all: file.age > 8 hours; fileset
+large: (file.space > 100gb) and (file.age >
+8 hours); fileset small: (file.space <= 100gb)
+and (file.age > 8 hours); reposet zws_tape:
+[’mg4’, ’p4_ls.t1a’, ’s4_ls.t1b’]; reposet
+tape_only: [’p4_ls.t1a’, ’s4_ls.t1b’]; policy
+05_migrate_policy: run [new_migrate_rule]
+continuous;
+
