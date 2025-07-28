@@ -1,0 +1,198 @@
+[root@pol-ems3 ~]# mmlscluster
+
+GPFS cluster information
+========================
+  GPFS cluster name:         pol.hpc.dc.xx.edu.yy
+  GPFS cluster id:           xxxxxxxxxxxxxxxxxxxxxxxxxxx
+  GPFS UID domain:           pol.hpc.dc.xx.edu.yy
+  Remote shell command:      /usr/bin/ssh
+  Remote file copy command:  /usr/bin/scp
+  Repository type:           CCR
+
+ Node  Daemon node name                      IP address    Admin node name                       Designation
+-------------------------------------------------------------------------------------------------------------
+   7   pol-ces1-hs.hpc.dc.xx.edu.yy          203.22.86.18  pol-ces1-hs.hpc.dc.xx.edu.yy          perfmon
+   8   pol-ces2-hs.hpc.dc.xx.edu.yy          203.22.86.19  pol-ces2-hs.hpc.dc.xx.edu.yy          perfmon
+  11   xxeb39-dmf-mds1-hs.hpc.dc.xx.edu.yy   203.22.86.26  xxeb39-dmf-mds1-hs.hpc.dc.xx.edu.yy   perfmon
+  12   xxeb39-dmf-mds2-hs.hpc.dc.xx.edu.yy   203.22.86.27  xxeb39-dmf-mds2-hs.hpc.dc.xx.edu.yy   perfmon
+  13   xxeb39-dmf-gpfs1-hs.hpc.dc.xx.edu.yy  203.22.86.12  xxeb39-dmf-gpfs1-hs.hpc.dc.xx.edu.yy  perfmon
+  14   xxeb39-dmf-gpfs2-hs.hpc.dc.xx.edu.yy  203.22.86.13  xxeb39-dmf-gpfs2-hs.hpc.dc.xx.edu.yy  perfmon
+  15   xxeb37-dmf-zwsa1-hs.hpc.dc.xx.edu.yy  203.22.86.16  xxeb37-dmf-zwsa1-hs.hpc.dc.xx.edu.yy  perfmon
+  16   xxeb40-dmf-zwsb2-hs.hpc.dc.xx.edu.yy  203.22.86.15  xxeb40-dmf-zwsb2-hs.hpc.dc.xx.edu.yy  perfmon
+  17   xxeb40-dmf-zwsb1-hs.hpc.dc.xx.edu.yy  203.22.86.14  xxeb40-dmf-zwsb1-hs.hpc.dc.xx.edu.yy  perfmon
+  18   xxeb37-dmf-zwsa2-hs.hpc.dc.xx.edu.yy  203.22.86.17  xxeb37-dmf-zwsa2-hs.hpc.dc.xx.edu.yy  perfmon
+  26   xxeb38-dmf-zwsc1-hs.hpc.dc.xx.edu.yy  203.22.86.4   xxeb38-dmf-zwsc1-hs.hpc.dc.xx.edu.yy  perfmon
+  27   xxeb38-dmf-zwsc2-hs.hpc.dc.xx.edu.yy  203.22.86.5   xxeb38-dmf-zwsc2-hs.hpc.dc.xx.edu.yy  perfmon
+  32   pol-gssio35h1-hs.hpc.dc.xx.edu.yy     203.22.86.6   pol-gssio35h1-hs.hpc.dc.xx.edu.yy     quorum-manager-perfmon
+  33   pol-gssio35h2-hs.hpc.dc.xx.edu.yy     203.22.86.25  pol-gssio35h2-hs.hpc.dc.xx.edu.yy     quorum-manager-perfmon
+  39   pol-ems3-hs.hpc.dc.xx.edu.yy          203.22.86.9   pol-ems3-hs.hpc.dc.xx.edu.yy          quorum-perfmon
+  40   pol-gssio35h3-hs.hpc.dc.xx.edu.yy     203.22.86.7   pol-gssio35h3-hs.hpc.dc.xx.edu.yy     quorum-manager-perfmon
+  41   pol-gssio35h4-hs.hpc.dc.xx.edu.yy     203.22.86.8   pol-gssio35h4-hs.hpc.dc.xx.edu.yy     quorum-manager-perfmon
+
+[root@pol-ems3 ~]# mmlsconfig
+Configuration data for cluster pol.hpc.dc.xx.edu.yy:
+----------------------------------------------------
+clusterName pol.hpc.dc.xx.edu.yy
+clusterId 5007502904557099570
+dmapiFileHandleSize 32
+ccrEnabled yes
+cipherList yyTHONLY
+maxblocksize 16m
+tscCmdPortRange 41000-41999
+cesSharedRoot /gpfs/cesSharedRoot
+enableUIDremap yes
+enableStatUIDremap yes
+afmMaxParallelRecoveries 48
+afmParallelReadChunkSize 2147483647
+afmParallelReadThreshold 10240
+afmParallelWriteThreshold 10240
+afmParallelWriteChunkSize 2147483647
+afmAsyncOpWaitTimeout 300
+sqtBusyThreadTimeout 20
+sqtCommandTimeout 300
+[gateway]
+maxTcpConnsPerNodeConn 1
+[protocol]
+nsdClientCksumTypeLocal ck64
+nsdClientCksumTypeRemote ck64
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nspdBufferMemPerQueue 24m
+nspdThreadsPerQueue 2
+nsdSmallThreadRatio 1
+nsdRAIDEventLogToConsole all
+nsdRAIDDefyyltGeneratedFD no
+nsdRAIDMasterBufferPoolSize 2G
+nsdRAIDSSDPerformanceShortTimeConstant 2500000
+nsdRAIDReconstructAggressiveness 0
+[common]
+dmapiEventTimeout 150000
+[pol-ces1-hs,pol-ces2-hs]
+dmapiEventTimeout 1
+[common]
+debugDataControl light
+afmSyncOpWaitTimeout 300
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDTracks 128K
+nspdQueues 120
+[gateway]
+maxStatCache 0
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+maxStatCache 128k
+[protocol]
+maxStatCache 2000000
+[ems,ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs,gateway]
+maxFilesToCache 128k
+[protocol]
+maxFilesToCache 1000000
+[ems,ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs,gateway,protocol]
+ignorePrefetchLUNCount yes
+numaMemoryInterleave yes
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDBlockDeviceMaxSectorsKB 0
+nsdRAIDBlockDeviceNrRequests 0
+nsdRAIDBlockDeviceQueueDepth 0
+panicOnIOHang yes
+nsdMinWorkerThreads 3842
+[dmf,ems,ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs,gateway,protocol]
+workerThreads 1024
+[xxeb39-dmf-gpfs1-hs,xxeb39-dmf-gpfs2-hs]
+workerThreads 128
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDBlockDeviceScheduler off
+nsdRAIDSmallThreadRatio 2
+[dmf,ems,gateway,protocol]
+maxMBpS 20000
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDThreadsPerQueue 16
+pagepoolMaxPhysMemPct 90
+pitWorkerThreadsPerNode 32
+nsdMaxWorkerThreads 3842
+[common]
+disableAssert uidremap.C:902
+minReleaseLevel 5.1.4.0
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDDiskDiagTimeout 130
+nsdRAIDEnableRGCMRebalanceWeight yes
+maxMBpS 50000
+backgroundSpaceReclaim Good: 1 10% 60 1% Info: 0 6% 30 1% Warning: 0 3% 10 0% Critical: 0 2% 5 0% OOS: 0 1% 1 0%
+[ems,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs,protocol]
+prefetchPct 50
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDClientOnlyChecksum yes
+[common]
+defyyltHelperNodes xxeb39-dmf-gpfs1-hs.hpc.dc.xx.edu.yy, xxeb39-dmf-gpfs2-hs.hpc.dc.xx.edu.yy, xxeb39-dmf-mds1-hs.hpc.dc.xx.edu.yy, xxeb39-dmf-mds2-hs.hpc.dc.xx.edu.yy
+[ems]
+pagepool 16384M
+[gateway]
+pagepool 240G
+[dmf]
+pagepool 128G
+[xxeb39-dmf-gpfs1-hs,xxeb39-dmf-gpfs2-hs]
+pagepool 24G
+[protocol]
+pagepool 200G
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs]
+pagepool 641468623257
+[pol-ems3-hs]
+pagepool 16384M
+[CALLHOME_SERVERS,GUI_MGMT_SERVERS,GUI_SERVERS,ems,ess3500_x86_64]
+yytoBuildGPL yes
+[pol-ems3-hs,pol-gssio35h1-hs,pol-gssio35h2-hs,pol-gssio35h3-hs,pol-gssio35h4-hs,dmf,ems,gateway,protocol]
+verbsRdma enable
+[pol-ems3-hs,pol-gssio35h1-hs,pol-gssio35h2-hs,pol-gssio35h3-hs,pol-gssio35h4-hs]
+verbsRdmaCm disable
+[pol-ems3-hs,pol-gssio35h1-hs,pol-gssio35h2-hs,pol-gssio35h3-hs,pol-gssio35h4-hs,dmf,ems,gateway,protocol]
+verbsRdmaSend yes
+[dmf,ems]
+verbsPorts mlx5_2/1/3 mlx5_3/1/3
+[gateway,protocol]
+verbsPorts mlx5_3/1/3
+[xxeb40-dmf-zwsb1-hs,xxeb40-dmf-zwsb2-hs]
+verbsPorts mlx5_4/1/3 mlx5_5/1/3
+[xxeb38-dmf-zwsc1-hs,xxeb38-dmf-zwsc2-hs]
+verbsPorts mlx5_4/1/3 mlx5_5/1/3
+[pol-ems3-hs,pol-gssio35h1-hs,pol-gssio35h2-hs,pol-gssio35h3-hs,pol-gssio35h4-hs,ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+verbsPorts mlx5_0/1/3 mlx5_2/1/3
+[ess3500_mmvdisk_pol_gssio35h1_hs_pol_gssio35h2_hs]
+nsdRAIDEnableSpaceMonitor 1
+[ess3500_mmvdisk_pol_gssio35h3_hs_pol_gssio35h4_hs]
+nsdRAIDEnableSpaceMonitor 0
+pagepool 641305168281
+[common]
+yytoload yes
+cesCidrPool <IP=10.255.122.28><ATTRIBUTE=><GROUP=vlan3051><PREFIX=>+<IP=203.22.86.28><ATTRIBUTE=><GROUP=vlan3044><PREFIX=>+<IP=10.255.121.28><ATTRIBUTE=><GROUP=vlan3051><PREFIX=>
+subnets 10.120.1.0/pol.hpc.dc.xx.edu.yy;pol-std-export.hpc.dc.xx.edu.yy;pol-cloud-export.hpc.dc.xx.edu.yy
+[dmf]
+tracedevOverwriteBufferSize 536870912
+tracedevWriteMode overwrite
+traceRecycle local
+trace all 4 tm 2 thread 1 mutex 1 vnode 2 ksvfs 3 klockl 2 io 3 pgalloc 1 mb 1 lock 2 fsck 3 fsckx 3 iolite 0
+[common]
+adminMode central
+
+File systems in cluster pol.hpc.dc.xx.edu.yy:
+---------------------------------------------
+/dev/UP01
+/dev/xx03
+/dev/xx04
+/dev/xx05
+/dev/xx06
+/dev/xx07
+/dev/xx08
+/dev/xx09
+/dev/xx10
+/dev/xxA01
+/dev/xxA02
+/dev/xxA03
+/dev/xxI01
+/dev/UR01
+/dev/cesSharedRoot
+/dev/cesSharedRoot2
+/dev/cesSharedRoot3
+/dev/dmfHome
+/dev/dmfTemp
+/dev/general00
+/dev/general01
+/dev/general02
+/dev/general03
+/dev/volatile02
