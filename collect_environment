@@ -1,0 +1,396 @@
+[root@bun085 Author-Kit]# ./collect_environment.sh
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+_=/bin/env
+LANG=en_AU.UTF-8
+SUDO_GID=53000
+HOSTNAME=bun085
+OLDPWD=/local/home/zebra
+FPATH=/usr/share/lmod/lmod/init/ksh_funcs
+SUDO_COMMAND=/bin/bash
+which_declare=declare -f
+USER=USER
+PWD=/local/home/zebra/Author-Kit
+HOME=/USER
+LMOD_VERSION=8.7.62
+SUDO_USER=zebra
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+LMOD_sys=Linux
+LMOD_ROOT=/usr/share/lmod
+SUDO_UID=53019
+MAIL=/var/spool/mail/zebra
+VISUAL=/usr/bin/vim
+TERM=xterm-256color
+SHELL=/bin/bash
+SHLVL=2
+MANPATH=/usr/share/lmod/lmod/share/man:
+SLURM_EXPORT_ENV=ALL
+MODULEPATH=/etc/modulefiles:/usr/share/modulefiles:/sw/auto/rocky8c/epyc4/modules/all:/sw/local/rocky8/epyc4/rcc/modules/:/sw/local/rocky8/noarch/rcc/modules/:/sw/local/rocky8/epyc4/qcif/modules/:/sw/local/rocky8/noarch/qcif/modules/:/sw/local/rocky8/epyc4/eait/modules/:/sw/local/rocky8/noarch/eait/modules/
+LOGNAME=USER
+MODULEPATH_ROOT=/usr/share/modulefiles
+LMOD_PACKAGE_PATH=/etc/lmod
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/lpp/mmfs/bin
+DEBUGINFOD_URLS=https://debuginfod.centos.org/
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+HISTSIZE=10000
+LMOD_PKG=/usr/share/lmod/lmod
+SBATCH_EXPORT=NONE
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ unset __lmod_sh_dbg;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
++ lsb_release -a
+LSB Version:	:core-4.1-amd64:core-4.1-noarch
+Distributor ID:	Rocky
+Description:	Rocky Linux release 8.10 (Green Obsidian)
+Release:	8.10
+Codename:	GreenObsidian
++ uname -a
+Linux bun085 4.18.0-553.47.1.el8_10.x86_64 #1 SMP Thu Apr 3 14:27:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              192
+On-line CPU(s) list: 0-191
+Thread(s) per core:  2
+Core(s) per socket:  48
+Socket(s):           2
+NUMA node(s):        16
+Vendor ID:           AuthenticAMD
+BIOS Vendor ID:      AMD
+CPU family:          25
+Model:               17
+Model name:          AMD EPYC 9454 48-Core Processor
+BIOS Model name:     AMD EPYC 9454 48-Core Processor
+Stepping:            1
+CPU MHz:             3799.934
+CPU max MHz:         2750.0000
+CPU min MHz:         1500.0000
+BogoMIPS:            5500.24
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            1024K
+L3 cache:            32768K
+NUMA node0 CPU(s):   0-5,96-101
+NUMA node1 CPU(s):   6-11,102-107
+NUMA node2 CPU(s):   12-17,108-113
+NUMA node3 CPU(s):   18-23,114-119
+NUMA node4 CPU(s):   24-29,120-125
+NUMA node5 CPU(s):   30-35,126-131
+NUMA node6 CPU(s):   36-41,132-137
+NUMA node7 CPU(s):   42-47,138-143
+NUMA node8 CPU(s):   48-53,144-149
+NUMA node9 CPU(s):   54-59,150-155
+NUMA node10 CPU(s):  60-65,156-161
+NUMA node11 CPU(s):  66-71,162-167
+NUMA node12 CPU(s):  72-77,168-173
+NUMA node13 CPU(s):  78-83,174-179
+NUMA node14 CPU(s):  84-89,180-185
+NUMA node15 CPU(s):  90-95,186-191
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local avx512_bf16 clzero irperf xsaveerptr wbnoinvd amd_ppin cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid overflow_recov succor smca fsrm flush_l1d
++ cat /proc/meminfo
+MemTotal:       1584302628 kB
+MemFree:        407338136 kB
+MemAvailable:   1515750720 kB
+Buffers:            2480 kB
+Cached:         1121024432 kB
+SwapCached:       223836 kB
+Active:         677237820 kB
+Inactive:       473738068 kB
+Active(anon):    5209540 kB
+Inactive(anon): 33323908 kB
+Active(file):   672028280 kB
+Inactive(file): 440414160 kB
+Unevictable:    16777216 kB
+Mlocked:        16777216 kB
+SwapTotal:       4194300 kB
+SwapFree:        3218068 kB
+Dirty:               176 kB
+Writeback:             0 kB
+AnonPages:      46566652 kB
+Mapped:         51851008 kB
+Shmem:           8601316 kB
+KReclaimable:    4743440 kB
+Slab:            6579816 kB
+SReclaimable:    4743440 kB
+SUnreclaim:      1836376 kB
+KernelStack:       89104 kB
+PageTables:       343448 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    796345612 kB
+Committed_AS:   57857180 kB
+VmallocTotal:   13743895347199 kB
+VmallocUsed:      892316 kB
+VmallocChunk:          0 kB
+Percpu:           711680 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:  39806976 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     4387380 kB
+DirectMap2M:    515260416 kB
+DirectMap1G:    1091567616 kB
++ inxi -F -c0
+./collect_environment.sh: line 14: inxi: command not found
++ lsblk -a
+NAME                    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+nvme0n1                 259:0    0 447.1G  0 disk
+├─nvme0n1p1             259:1    0   256M  0 part /boot/efi
+├─nvme0n1p2             259:2    0     1G  0 part /boot
+└─nvme0n1p3             259:3    0 445.8G  0 part
+  ├─systemvg-root       253:0    0    50G  0 lvm  /
+  ├─systemvg-swap       253:1    0     4G  0 lvm  [SWAP]
+  ├─systemvg-tmp        253:2    0 355.8G  0 lvm  /tmp
+  ├─systemvg-tmpmmfs    253:3    0     4G  0 lvm  /tmp/mmfs
+  ├─systemvg-slurmspool 253:4    0    16G  0 lvm  /var/spool/slurmd
+  ├─systemvg-vartmp     253:5    0     8G  0 lvm  /var/tmp
+  └─systemvg-var        253:6    0     8G  0 lvm  /var
++ lsscsi -s
+[N:0:0:1]    disk    Dell BOSS-N1__1                            /dev/nvme0n1   480GB
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+No modules loaded
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ nvidia-smi
+./collect_environment.sh: line 18: nvidia-smi: command not found
++ lshw -short -quiet -sanitize
++ cat
+H/W path              Device          Class          Description
+================================================================
+                                      system         PowerEdge R6625 (SKU=0AF8;ModelName=PowerEdge R6625)
+/0                                    bus            0P5J52
+/0/0                                  memory         64KiB BIOS
+/0/400                                processor      AMD EPYC 9454 48-Core Processor
+/0/400/700                            memory         3MiB L1 cache
+/0/400/701                            memory         48MiB L2 cache
+/0/400/702                            memory         256MiB L3 cache
+/0/401                                processor      AMD EPYC 9454 48-Core Processor
+/0/401/703                            memory         3MiB L1 cache
+/0/401/704                            memory         48MiB L2 cache
+/0/401/705                            memory         256MiB L3 cache
+/0/1000                               memory         1536GiB System Memory
+/0/1000/0                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/1                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/2                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/3                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/4                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/5                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/6                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/7                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/8                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/9                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/a                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/b                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/c                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/d                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/e                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/f                             memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/10                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/11                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/12                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/13                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/14                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/15                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/16                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/1000/17                            memory         64GiB DIMM Synchronous Registered (Buffered) 4800 MHz (0.2 ns)
+/0/100                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/100/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/100/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/100/5.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/100/5.1/0          /dev/nvme0      storage        Dell BOSS-N1
+/0/100/5.1/0/0        /dev/ng0n1      disk           NVMe disk
+/0/100/5.1/0/1        /dev/nvme0n1    disk           480GB NVMe disk
+/0/100/5.1/0/1/1      /dev/nvme0n1p1  volume         255MiB Windows FAT volume
+/0/100/5.1/0/1/2      /dev/nvme0n1p2  volume         1023MiB EFI partition
+/0/100/5.1/0/1/3      /dev/nvme0n1p3  volume         445GiB LVM Physical Volume
+/0/100/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/100/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/100/7.1/0.1        /dev/fb0        generic        Advanced Micro Devices, Inc. [AMD]
+/0/100/7.1/0.4                        bus            Advanced Micro Devices, Inc. [AMD]
+/0/100/7.1/0.4/0      usb1            bus            xHCI Host Controller
+/0/100/7.1/0.4/0/1                    bus            USB 2.0 Hub
+/0/100/7.1/0.4/1      usb2            bus            xHCI Host Controller
+/0/100/7.1/0.5                        generic        Genoa CCP/PSP 4.0 Device
+/0/100/14                             bus            FCH SMBus Controller
+/0/100/14.3                           bridge         FCH LPC Bridge
+/0/100/14.3/0                         system         PnP device PNP0c01
+/0/100/14.3/1                         system         PnP device PNP0c02
+/0/100/14.3/2                         system         PnP device PNP0b00
+/0/100/14.3/3                         communication  PnP device PNP0501
+/0/100/14.3/4                         communication  PnP device PNP0501
+/0/101                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/102                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/103                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/104                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/105                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/106                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/107                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/108                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/109                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10a                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10b                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10c                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10d                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10e                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/10f                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/110                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/111                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/112                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/113                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/114                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/115                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/116                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/117                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/117/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/117/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/117/1.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/117/1.1/0          ib0             network        MT28908 Family [ConnectX-6]
+/0/117/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/117/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/117/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/118                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/119                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11a                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11b                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11c                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11d                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11e                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11e/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/11e/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/11e/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/11e/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/11e/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/11f                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/120                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/121                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/122                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/123                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/124                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/125/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/125/5.2                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125/5.2/0                          bridge         PCI Express Bridge
+/0/125/5.2/0/0        /dev/fb0        display        Integrated Matrox G200eW3 Graphics Controller
+/0/125/5.3                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125/5.3/0          eno8303         network        NetXtreme BCM5720 Gigabit Ethernet PCIe
+/0/125/5.3/0.1        eno8403         network        NetXtreme BCM5720 Gigabit Ethernet PCIe
+/0/125/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/125/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/125/7.1/0.4                        bus            Advanced Micro Devices, Inc. [AMD]
+/0/125/7.1/0.4/0      usb3            bus            xHCI Host Controller
+/0/125/7.1/0.4/0/1                    bus            Dell Integrated Hub
+/0/125/7.1/0.4/0/1/1                  bus            Dell Integrated Hub
+/0/125/7.1/0.4/0/1/4                  bus            Dell Integrated Hub
+/0/125/7.1/0.4/1      usb4            bus            xHCI Host Controller
+/0/125/7.2                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/125/7.2/0                          storage        FCH SATA Controller [AHCI mode]
+/0/126                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/127                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/128                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/129                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12a                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12b                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12c                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12c/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/12c/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/12c/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12c/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/12c/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/12c/7.1/0.5                        generic        Genoa CCP/PSP 4.0 Device
+/0/12d                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12e                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/12f                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/130                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/131                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/132                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/133                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/133/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/133/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/133/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/133/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/133/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/134                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/135                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/136                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/137                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/138                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/139                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13a                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13a/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/13a/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/13a/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13a/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/13a/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/13b                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13c                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13d                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13e                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/13f                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/140                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/141                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/141/0.2                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/141/0.3                            generic        Advanced Micro Devices, Inc. [AMD]
+/0/141/7.1                            bridge         Advanced Micro Devices, Inc. [AMD]
+/0/141/7.1/0                          generic        Advanced Micro Devices, Inc. [AMD]
+/0/141/7.1/0.1                        generic        Advanced Micro Devices, Inc. [AMD]
+/0/142                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/143                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/144                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/145                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/146                                bridge         Advanced Micro Devices, Inc. [AMD]
+/0/147                                bridge         Advanced Micro Devices, Inc. [AMD]
+/1                                    power          07DWXYA01
+/2                                    power          07DWXYA01
+/3                    input0          input          Power Button
+/4                    input1          input          PC Speaker
