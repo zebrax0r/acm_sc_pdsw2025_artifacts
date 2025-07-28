@@ -1,0 +1,838 @@
+[root@xxeb39-dmf-mds2 ~]# dmf monitor -l
+DMF_AGENTS: Healthy
+===================
+Agent                Healthy    Assessed (AEST)      Group                 Node                  FS/LS            Started (AEST)       Agent ID                          Message
+-------------------  ---------  -------------------  --------------------  --------------------  ---------------  -------------------  --------------------------------  ---------
+admin                Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    -                2024-12-17T05:58:11  8e1c8b61b3984497b1f3f7949b9aa281  -
+anyqd                Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    -                2024-12-17T05:58:11  cef12d291fb0419781dacc5e4112791f  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db1        xxeb39-dmf-db1-dmf    -                2024-12-28T19:25:04  a6bd6b7d46a043979b1d4247de17ddda  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db10       xxeb39-dmf-db10-dmf   -                2024-12-29T01:22:44  ce2380e41a3142d78e591b891adfee46  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db2        xxeb39-dmf-db2-dmf    -                2025-01-15T03:41:46  3883d847cad54ca5aeada71c7bcb8dff  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db3        xxeb39-dmf-db3-dmf    -                2024-12-17T05:58:11  cc8195da8df8427ba70565c444e6cace  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db4        xxeb39-dmf-db4-dmf    -                2024-12-17T05:58:11  516cb27d37294d8389a6a690d4a87249  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db5        xxeb39-dmf-db5-dmf    -                2024-12-29T07:39:51  3fd6afb49b344cc09c65c69755d45e20  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db6        xxeb39-dmf-db6-dmf    -                2024-12-17T05:58:30  e87166a0856443b0ba8c8e353e26dcfb  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db7        xxeb39-dmf-db7-dmf    -                2024-12-29T04:24:01  f7e6b03a05144b4d812287a4606a8fdb  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db8        xxeb39-dmf-db8-dmf    -                2024-12-29T03:51:56  8b5d98e882864941bfcce29307c7931c  -
+apiserver            Yes        2025-07-28T20:48:04  xxeb39-dmf-db9        xxeb39-dmf-db9-dmf    -                2024-12-28T22:59:26  31157b4fc8fc46c5922cdf8f6fc6486f  -
+backup-manager       Yes        2025-07-28T20:48:04  dmf_database_servers  xxeb39-dmf-db10-dmf   -                2025-01-09T13:39:40  7c5d456f11f2411088ba792315608ed4  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/UP01       2025-07-24T10:17:50  b3c8c5367fef45ecb905d0e3fe8cc37c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx03       2025-07-24T10:17:49  55ce16b646204ccaa8cc4386d4a4861d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx04       2025-07-24T10:17:48  2527ec4e696d43108bf5268c9356d664  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx05       2025-07-24T10:17:49  92a58e11f6b84a21a89d6e26c6fdfd03  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx06       2025-07-24T10:17:50  6bcbfe39c5ae4a0995eabd92c4c2bf8c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx07       2025-07-24T10:17:49  9145f6ca0dcc4deea7c836f0312c16b2  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx08       2025-07-24T10:17:48  898ff38d59a5416face4e1241aa01e10  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx09       2025-07-24T10:17:50  3099acb9340b4dd6bb5f0e88318a18c1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xx10       2025-07-24T10:17:50  4a16c3ba932e4e85bbd547be69b3c569  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xxA01      2025-07-24T10:17:50  48f62314e9964988a160c5296c03a347  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xxA02      2025-07-24T10:17:48  caa509af04014b03b2fe445ade816070  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xxA03      2025-07-24T10:17:50  9c1388946a6b414cb338cd11dae5e206  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/xxI01      2025-07-24T10:17:50  117f516c77d94c8eaeb4a14165857098  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/UR01       2025-07-24T10:17:48  fb12a06b72ae440a90ac452e1f15682b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/general00  2025-07-24T10:17:50  5d6f18817eef4f07a19f44ecfd5e8199  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/general02  2025-07-24T10:17:48  122d0b79a9c94142854249dc5e617cfe  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  /gpfs/general03  2025-07-24T10:17:49  7d43f3d03a604a9db36e6698de4a47dd  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/UP01       2025-07-07T21:41:24  ab25411a2971469d8dbeaa4ecee2d9fe  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx03       2025-07-07T21:41:24  f431bd81e56446c0b1a8b8ea3d1c652f  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx04       2025-07-07T21:41:24  09a9dc09fc414937a0a9d44a37fc7565  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx05       2025-07-07T21:41:26  6b96b467d65646bdb81f975353e67577  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx06       2025-07-07T21:41:24  5e14e0a027924413b5a1a6ee957549eb  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx07       2025-07-07T21:41:24  342d72e649534cebaef6db1972ef7daf  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx08       2025-07-07T21:41:26  fda50cdb77dd49629d6d37628ae9b5c5  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx09       2025-07-07T21:41:25  1f3694961e164b14b27fc2c32a79f9fb  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xx10       2025-07-07T21:41:24  77757eef5a1d4cf9ab26f8843a9da30c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xxA01      2025-07-07T21:41:24  c43acd98a7a54f8381fcbefa7ea72d1b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xxA02      2025-07-07T21:41:25  6e0e64bad9a1406c9e459cce15f6969b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xxA03      2025-07-07T21:41:25  5d80f5f3f1fe4cdda15021cab3a91702  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/xxI01      2025-07-07T21:41:24  1b1a9e193fc5456d97b8862a6c483191  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/UR01       2025-07-07T21:41:26  8ac2f730c8a74c3a9993f465f200b6a2  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/general00  2025-07-07T21:41:25  e7f8b819e7e4437a8e4d571b936512c1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/general02  2025-07-07T21:41:25  ee7c939d872b4b06a05d86ed1055f31d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  /gpfs/general03  2025-07-07T21:41:26  557451fab6ec48049d0ea54a35d6eee7  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xx08       2025-02-10T08:19:05  bf0ce840915549e48c45d01602043e47  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xx09       2025-02-10T08:19:05  162dfb40c9464b85a614b5b1945b6630  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xx10       2025-02-10T08:19:05  0d80b99a85d14865b4f597d2fb2bb028  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xxA01      2025-02-24T14:05:56  3336d6a2736a4b508a26bf873876cab2  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xxA02      2025-02-24T14:07:26  ccf2d65d289541a387bc176270d9fcc7  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xxA03      2025-02-24T14:08:26  9b5f1db020c24b12be3fcde72ec1680e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/xxI01      2025-02-24T14:10:56  51ea16d8b8a842d4a4b3373650debb2c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/UR01       2025-02-10T08:19:05  3bd45e2aabe643799171e32dc2dc3f7e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  /gpfs/general03  2025-03-14T09:58:15  02e90a2ce8b145f792725b41402d7d0c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xx08       2025-06-17T10:47:55  5ab85173629f4ec99db18ca8143570d8  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xx09       2025-06-17T10:47:56  66cdbc66ed0d4334a51f373bc6c1255c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xx10       2025-06-17T10:47:56  707a5f7c19de4392a100624fb77ee8ee  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xxA01      2025-06-17T10:47:54  b7a72a2d1fa543328410b563183d6c83  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xxA02      2025-06-17T10:47:55  5cc28d70a2614235ab35cb03d42c2357  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xxA03      2025-06-17T10:47:54  fbe63522c26e4403a2d03b0ca4266f1c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/xxI01      2025-06-17T10:47:55  a2d4195c01054ffc8c38b34246c47e6d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/UR01       2025-06-17T10:47:55  44955d5340d84e51aca822a6f40babb8  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  /gpfs/general03  2025-06-17T10:47:54  0d0076055b294faf946c37603714ead3  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/UP01       2025-05-22T15:13:19  8f9f46566beb404785b3d1212493c01e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx03       2025-05-22T15:13:19  2c51281aab04448db1ef85d809f0a993  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx04       2025-05-22T15:13:19  810a9b8a5be84f799eb737d581909c2c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx05       2025-05-22T15:13:19  f53134d248364ba39e2b9031482b9e32  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx06       2025-05-22T15:13:18  4ba4cbdec80e43149df9c154465cb997  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx07       2025-05-22T15:13:19  47d832d66f734ebe8eebba5c33501248  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx08       2025-05-22T15:13:19  9263453201b544798eb4968396c6c054  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx09       2025-05-22T15:13:18  63d90fcad03d476a9a2c9a01e8640bc5  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xx10       2025-05-22T15:13:18  e4c25ea41cdf4a2098a2f2338d0ca3bf  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xxA01      2025-05-22T15:13:19  e937377bcb43429a86942baca5432193  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xxA02      2025-05-22T15:13:18  d0d729607c924d05991c05d85451b554  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xxA03      2025-05-22T15:13:19  eb4195fa5ccb4858a2fce824c1ca98c3  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/xxI01      2025-05-22T15:13:18  5e0983560b8749fdb38185668cf474ad  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/UR01       2025-05-22T15:13:18  25a1405d797b4d3a9214d64fea012bdc  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/general00  2025-05-22T15:13:18  8e383f64fe9149aea507af6e71533f4b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/general02  2025-05-22T15:13:18  027a6fd2ed784664b292730fa961d95c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  /gpfs/general03  2025-05-22T15:13:19  7b1fb2c686df471ab004c00847c7dcef  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/UP01       2025-05-22T15:39:29  8aed3252d97e4d1c905e67a41f133f22  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx03       2025-05-22T15:39:29  575f3bb9dc1e47149e99bd7fb50dd8e2  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx04       2025-05-22T15:39:27  83b66b6830b646708e567f45e88ae139  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx05       2025-05-22T15:39:28  8a2c918991074e4e833541aab257b102  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx06       2025-05-22T15:39:26  5011010af4814cf8aea9526d7900cd6c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx07       2025-05-22T15:39:26  e965248af1564a6ca74c13fcd5b90150  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx08       2025-05-22T15:39:27  482fb9e336654f23afbefc40fd444574  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx09       2025-05-22T15:39:26  f520149ad61d40bfb2e8539988dfb441  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xx10       2025-05-22T15:39:27  df314b74e077481baed018c0f9c0bd0c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xxA01      2025-05-22T15:39:28  9de71866c3a749ba81716abb37242f2f  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xxA02      2025-05-22T15:39:29  835322706f30470fae125ca651ff61f8  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xxA03      2025-05-22T15:39:29  e8f021ce32b845d8ba3cc0cc3a14b303  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/xxI01      2025-05-22T15:39:27  c504eb416941479b89c4f1ce925f79b5  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/UR01       2025-05-22T15:39:26  78ce121567ef42c4b9e6688d01a2b0b7  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/general00  2025-05-22T15:39:28  f1015ccb50564374a9282fb58dd5caa5  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/general02  2025-05-22T15:39:28  df9dc70c5af34f41b94b18737927d51b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  /gpfs/general03  2025-05-22T15:39:28  95d9990d211a40d5a1186b4776730feb  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/UP01       2025-07-07T21:12:55  61b65e45f788470ca307d5797a9e9cc0  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx03       2025-07-07T21:12:54  4c12ed1a7ace4b9b9b85b776323f0539  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx04       2025-07-07T21:12:53  4f0dda753b41487dba4a7b04d3abf421  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx05       2025-07-07T21:12:54  c4489c62aea0439984c7b274c58c009e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx06       2025-07-07T21:12:53  1d8166f2b628440997af057ec831e669  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx07       2025-07-07T21:12:55  0295bba82087423687a43faf4b211cb4  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx08       2025-07-07T21:12:55  44eed8d31a7a4625805568d36116ed6d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx09       2025-07-07T21:12:55  01cd33177bec46bb8ad6ac8920431275  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xx10       2025-07-07T21:12:55  6eb9c8155c64448290ac874f87ffdbf8  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xxA01      2025-07-07T21:12:54  d55aa2774ca14da1bb6ab82fa62d2a11  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xxA02      2025-07-07T21:12:55  dc7c253972f34fb98a015912b85392ec  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xxA03      2025-07-07T21:12:53  221782b342d44e8292b8728093cecd59  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/xxI01      2025-07-07T21:12:55  1a80bea5edd44e0e85bd4ed367eaeff1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/UR01       2025-07-07T21:12:55  7d20c97c829040f8a14cc2dd4a237d6f  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/general00  2025-07-07T21:12:55  4d7c5c255ae646638a1e4d2c00828bf1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/general02  2025-07-07T21:12:54  6df46f9302c345d587643060743c1b79  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   /gpfs/general03  2025-07-07T21:12:55  2f50f57b0fab440ebf5f7aec8e99e674  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/UP01       2025-05-22T16:56:37  c2cf46d6d5cd41a5a7d270ef53ff29eb  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx03       2025-05-22T16:56:35  a59ab21c25fc4182a286091bfc648812  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx04       2025-05-22T16:56:37  aef2e315b25a497fb521d96d55bbabc9  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx05       2025-05-22T16:56:37  c93805e8969d42338c15fdb846b717a1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx06       2025-05-22T16:56:36  ba6df58cd0534d8b9c94121d2439b665  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx07       2025-05-22T16:56:36  c467660e4f684c29aa41388bd1afecbc  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx08       2025-05-22T16:56:36  6cb6d716b50743eab4d6f60e3801e3ff  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx09       2025-05-22T16:56:35  06f5c6233ede400f9a79906d92bcc08e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xx10       2025-05-22T16:56:36  4ffe8485cd4247f2a7e5937c73e27e9e  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xxA01      2025-05-22T16:56:35  cab6fea58f3f4e1c80357de1ced96485  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xxA02      2025-05-22T16:56:36  dacbea7f281a4bd4863dabc82a587991  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xxA03      2025-05-22T16:56:35  6505956e2e554304af4f0cf33fe825ad  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/xxI01      2025-05-22T16:56:36  c7d584c1ffb44571b84ea2ecfb620e9b  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/UR01       2025-05-22T16:56:37  8cad8c9ab82d4d669973c74bf30e4a00  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/general00  2025-05-22T16:56:36  8c9ff71077d44b0c86c30e9b325c606c  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/general02  2025-05-22T16:56:37  eca93afa3708412c869ee7ae00ff43b9  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   /gpfs/general03  2025-05-22T16:56:35  00a5f6fa80c84a66ad013a17e2589622  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/UP01       2025-06-24T16:16:42  ec961a09aa4f4abcbb2819bbfa5cf6bf  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx03       2025-06-24T16:16:43  b9d663b8d3cb47e58524a82b9fd516ec  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx04       2025-06-24T16:16:43  b965b7229c604fd7a8482b8e636e6e59  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx05       2025-06-24T16:16:43  a08ef07203654ab2975b9658367c6dd4  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx06       2025-06-24T16:16:42  6c7207a898b74f439fb0d4b3b34cc684  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx07       2025-06-24T16:16:42  922693c4a2b14258ba2a74f7a48d5b0d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx08       2025-06-24T16:16:43  0dcf9ceb5f6940d89a4845482569fea6  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx09       2025-06-24T16:16:42  927fbf9601514b3282c6c1d8e9a6c230  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xx10       2025-06-24T16:16:43  1ad68db3fd1748bf96dac2f12e7744ec  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xxA01      2025-06-24T16:16:43  b9dbe7549b2e46ce84fcae03c9009551  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xxA02      2025-06-24T16:16:43  5b6d90008a9744f0874c6c30281ce7fd  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xxA03      2025-06-24T16:16:43  a1f2e484f1e1467babe879c0730f56e9  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/xxI01      2025-06-24T16:16:43  0fca7d8890484aefbd764dbc85b42f56  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/UR01       2025-06-24T16:16:43  4c7f4ff57f114f4fa76e06e5082b3a88  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/general00  2025-06-24T16:16:42  53fadec6d31d4d5caf84cee1e5aa88e0  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/general02  2025-06-24T16:16:43  0a79ecaf366f4773b90a9b5180177c0d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  /gpfs/general03  2025-06-24T16:16:43  2b995cf905d04e84a6e784e00853ef32  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/UP01       2025-06-25T09:56:39  dcda840ce8a24e77b12d29884f942652  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx03       2025-06-25T09:56:39  a5f8c9a53b78448a938a3f1d380fee6a  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx04       2025-06-25T09:56:40  edbc22dcda4d44d89b80da4af8b44905  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx05       2025-06-25T09:56:40  09ca1809dedc49069ecc919f62b2ba80  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx06       2025-06-25T09:56:40  cb3ad5a102c7469c9876998ea822def0  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx07       2025-06-25T09:56:38  035512b392234ae0b57ed705da64d020  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx08       2025-06-25T09:56:39  e286b445520141efb7863ea32e7ea795  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx09       2025-06-25T09:56:38  04936b4c4e694f0ead48539337dbc67f  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xx10       2025-06-25T09:56:40  eb6736c0f235464c8e6c6581b9f76cd0  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xxA01      2025-06-25T09:56:38  3d14eb581a6d4758b334b6d9ccf4acb1  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xxA02      2025-06-25T09:56:40  36a3a351f23940dc924fb9b237397f68  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xxA03      2025-06-25T09:56:39  8d927b33e7d7479faa8a9a027ab76fac  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/xxI01      2025-06-25T09:56:40  93373d377d774ece983674c2521a9999  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/UR01       2025-06-25T09:56:40  7623bae5da764efb97e58a1a5eaecf53  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/general00  2025-06-25T09:56:40  20a4fe50e7574b8996e7440819be3b6d  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/general02  2025-06-25T09:56:39  69da19d7a519491bae60fdbd354a18b0  -
+changelog-processor  Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  /gpfs/general03  2025-06-25T09:56:40  c30ef430683441bfb20445271bdbc60e  -
+coordd               Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    -                2024-12-17T05:58:00  00000000000000000000000000000000  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UP01       2025-02-10T09:17:06  9cb9222579654feebc9b053eabf6895d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UP01       2025-02-10T09:17:06  98f88cd5357a439a8b69f51c2b78dfd5  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx03       2025-05-30T16:17:53  dae61873746d4e288fdcae8f7dc4dbc0  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx03       2025-05-30T16:17:53  47fd1491b30342108c9db37858659d7e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx03       2025-05-30T16:17:53  f9e66bd799c44d5aaa79a0efe8e7c45f  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx03       2025-05-30T16:17:53  14a277bdabef4aa2a6abbdbe1fc91326  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx03       2025-05-30T16:17:53  0aaa3e5f67da45358bf87b4a776fbc95  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xx03       2025-06-13T08:03:58  3aa5b4ceed1245d7bef6169bde51b108  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xx03       2025-06-17T07:48:37  6cc3984b9d414735b5d02a6c2b205b22  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx03       2025-07-01T10:12:40  09cc5ff8dbfe40549b7317a0325a7430  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx04       2025-06-03T13:10:06  df7add0deb94487abd8a7daecc3b12bc  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx04       2025-06-03T13:10:06  053e4b235d9a4013a58de9e9e12c2f2b  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx04       2025-06-03T13:10:06  236da506cd294b219b12955a8c488b1f  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx04       2025-07-07T21:49:52  7d8b95498bcf4834aba7ba7c909b9279  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx05       2025-07-01T10:48:37  b43b3835cec24a24bc5eab378fb2d2d1  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx05       2025-07-01T10:48:37  87ea992f7988451692e0446dc8a86744  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx05       2025-07-01T10:48:37  d57f3476cc4041dc974cd899165a48f4  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx05       2025-07-01T10:48:37  597f7fc659fe49758a47698a94cddf91  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx06       2025-06-03T13:09:55  eed7f7a08f6d4a138d5e2002c9e08bec  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx06       2025-06-03T13:09:55  3dfc560d4a694cdc8b5f718147cd8f6d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx06       2025-06-03T13:09:56  00f8f291cfda405586d103a62c694dcc  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx06       2025-07-21T20:26:28  031a34511c8c4786bf9ff8533e5db4ba  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx07       2025-06-03T13:09:25  de697921c6014c47aea99db08624c44b  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx07       2025-06-03T13:09:26  3d7696ee30b440878ea4b0306b23975d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx07       2025-06-03T13:09:26  a5024865097c490a8173bb420f54138e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx07       2025-06-03T13:09:26  ff6f5cedd36948c3ac39fafed316e08a  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xx08       2025-05-30T16:19:26  0064734049ff4061852ea3ded6989f9a  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx08       2025-05-30T16:19:26  f8694c48131d4d028a660775440c0e1c  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx08       2025-05-30T16:19:26  a1d866e0f5f3475ea669d0b643a9ae67  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx08       2025-05-30T16:19:26  a29810ad5dc94d35a4c1507a3b1f9cb2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx08       2025-05-30T16:19:26  5f1c5a4c223e41dfad814e25b8041b30  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx08       2025-05-30T16:19:26  5a04e71e84a14751b3c9f78d9ea736c2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx08       2025-05-30T16:19:26  e7c120873d084bae90ce670f7b4ddd0a  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx08       2025-06-06T14:14:44  ad01e8f25e30406cbb8d140313343578  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2025-06-03T13:08:20  ecfc0a49cd0744729e6aab1c8de999bf  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2025-06-03T13:08:20  29efd268a87e4ec6b2e03b7b372414c3  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2025-06-03T13:08:20  7b6d285c5fbc43d4a0e1d5699ac70c94  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2025-06-03T13:08:20  fa2eec74f6a04b03b226fc7de27e50b9  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2025-06-03T13:08:20  f86aa09ae27b445bb8cae88e9193a019  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx09       2025-06-03T13:08:21  e137e4238fd148a8b3c1caef6bc2d9e6  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx09       2025-06-03T13:08:21  24961d05bb2d49ccb3e77f3db9a595a7  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx09       2025-06-03T13:08:21  c3c81a3c5bdd4992ae98f6a22be8c1c2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx10       2025-06-03T13:07:38  cfad2aedf3c94697af6d797621e5c9a2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx10       2025-06-03T13:07:38  002c7611d4e14682aeff1e34b4b4c8fe  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx10       2025-06-03T13:07:38  3ac184c5149244c0b9b504c1a08e633b  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx10       2025-06-03T13:07:38  6be754d7b9b34d27b5c179c73ca0255e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx10       2025-06-03T13:07:38  9d20d7b75a264a94b98d23f2bbf4fb61  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx10       2025-06-03T13:07:38  5066d1d6c3304930ae5e39621b1b6ecf  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx10       2025-06-03T13:07:38  9fc8665a53df47c6a8eed78fe1e02de6  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx10       2025-06-03T13:07:38  31952e52ab03451ea6f2719ec4fa4a82  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  1e7dbeaeafff431496223d82208cd206  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  33b910a9a7f949fbbac50053b9a9a22d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  e674dd84631142c6a254081e82086211  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  b9daafdc082c41739f188c6cc121ceb2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  3f4da8e0705e4d04a8aa0a0632abccb5  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-25T08:56:38  08c6d445629b4e7496cc0794b1806dd4  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA01      2025-04-07T10:21:30  ff092e4cfea64ea9b61c8a884a551205  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA01      2025-04-07T10:21:30  9884fcee25904684818fbdf269d38cee  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxA02      2025-02-25T09:00:26  c5c1f57cc5a84e0eb9c7fd84098c5e38  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxA02      2025-02-25T09:00:26  eb728eaf97d744dc9c31d27bd4cfc22c  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA02      2025-02-25T09:00:26  456c26427bf345728017d69c2293f2c2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA02      2025-02-25T09:00:26  1c08bf2b022d41f8ab17ca5b45c3cffe  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA02      2025-02-25T09:00:26  257ce22aa99e437c8f57be05a9d13342  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA02      2025-02-25T09:00:26  ad4805e242914c0bbfeb4727ae3d63bf  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xxA02      2025-04-07T10:26:12  bf26549066ff4e84ac10b7a7e59b5f0e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxA02      2025-04-07T10:26:40  4cb5c9cc74314ac2be8921d52d44fdcf  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxA03      2025-02-25T09:03:19  d69fb38bd5ce4c74b59b353ae5920660  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-02-25T09:03:19  4d7a67cfaf194908acb1ffbf69678fa5  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-02-25T09:03:19  b87785a367b3462ab3bac6eac1c251e2  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-04-07T10:21:30  56a5ac0648ae4660a66b6cf13615da83  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-04-07T10:21:30  1852665b91e54121979e48579cdb27ba  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-04-07T10:21:30  2745da51274c49d09b2ebb5fa3222400  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xxA03      2025-04-07T10:26:12  6452e6dacaa8413f987495c774ba070f  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xxA03      2025-04-07T10:26:12  f1e0359d3fa34405aefba8106cf6187c  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:19  ef15059dbeb54fec9ca69898dee23769  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxI01      2025-02-25T08:52:19  92c4936ac53842e48199674384cab8d4  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxI01      2025-02-25T08:52:19  13a9889525604770abbd3e288f25c182  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxI01      2025-02-25T08:52:19  c27fa0d2044745e6b30c5b7ed3dd0095  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxI01      2025-02-25T08:52:26  2148e44b6eb1466491ab81887ae51616  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxI01      2025-04-07T10:21:45  0b2726f459d74060af098bcb263a5853  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xxI01      2025-04-07T10:26:12  8616b87689ff46dc8f3c2809dfe36aff  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxI01      2025-04-07T10:26:30  17588f2e6d664978a4395bca02ebbfe9  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UR01       2025-02-10T09:17:07  8828149349f643c490f504e7e5bc2bcb  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UR01       2025-02-10T09:17:07  dc946f6fdb474bd183f01e7a1f12cf03  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UR01       2025-02-10T09:17:07  15fefe7fe81941d7b22ea520ef79d194  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/UR01       2025-02-10T09:17:07  f6126c07c0dc451b9bf2c3e3eaefd72a  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/UR01       2025-02-10T09:17:07  9d38dca2fd7c427282178144d176a7af  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/UR01       2025-02-10T09:17:07  de5fb3d7d4c1410b8906409e459e1a47  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/UR01       2025-04-07T10:21:30  7eac6baf12644649b1c49216f2b49dd0  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/UR01       2025-04-07T10:26:41  5c8a3dccd53745c58415712163d6b27d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general00  2025-07-18T14:23:51  981c7f008ee24667a35fa73f96d72070  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general00  2025-07-18T14:23:51  ee85dcd5c6194f6e9160f28239a05a34  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general00  2025-07-18T14:23:51  242cea5824b94500919b5161d7446125  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general00  2025-07-18T14:23:51  9c8da0333ffd447eba43512f6a8cb988  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general00  2025-07-18T14:23:51  e2e375e2300c4476bb425da873d0dd4e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/general00  2025-07-18T14:23:51  738eba9ea13742dabe9d3a4b06c67f56  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/general00  2025-07-18T14:23:51  f524285db1c84ed9ab241180aca33ec3  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/general00  2025-07-18T14:23:51  69d74268f2be4193a181bcb43faca480  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general02  2025-06-03T13:11:42  995b762e478b48fb8d2eec6bc8564ff9  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general02  2025-06-03T13:11:42  4c517ed268cb4f94b2f280a2435626af  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general02  2025-06-03T13:11:42  8ab7d7d5f87d46c19ff096fff6653219  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general02  2025-06-03T13:11:42  48b5d67874ba4642bf77efffd524d869  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  0ccb1a0174b84476b8299afdd9664fa0  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  552b4b4f3db14806b988706b7fba5f24  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  7bc0126bb75042219c93ac4a710b392d  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  d5e39988265a43debe2cfe63df959869  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  e3ef40c1e23a4d4387bcf2275281499e  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:10  03db10e066414ccf917181d4a7004f5c  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/general03  2025-03-14T10:37:10  e40ae705c57a45d7b25464a81e237e96  -
+data-manager         Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general03  2025-03-14T10:37:11  4a34c1c054034fd38fc3da5601cfd6d0  -
+data-migrator        Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    -                2024-12-29T04:22:30  9742f8fa3a514770a6e6dff336302eeb  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  -                2025-07-24T10:17:50  a40593cbfe584c3fa1eac39a396edf80  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  -                2025-07-07T21:41:25  fdd6c957946848e28b896ad312039d44  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  -                2025-02-10T08:19:05  f3e592756df749838c07babb71eb46ef  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  -                2025-06-17T10:47:54  a41a3604845e4170afec68f36699c105  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  -                2025-05-22T15:13:18  16304005076642b482db26a9310cbfbc  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  -                2025-05-22T15:39:29  55ad29344a7f4de8b54d2f6a19b864dc  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   -                2025-07-07T21:12:53  c861dd63d7e2494eb7001cec93c0746a  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   -                2025-05-22T16:56:36  2d65efb581f341ca87fbf2ce44294145  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  -                2025-06-24T16:16:43  dd643c4608f34099aca4e1151177bb8c  -
+dmfconfd             Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  -                2025-06-25T09:56:40  edf187fa491c41fd83b89c4c1b2e484f  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  -                2025-07-24T10:17:49  d2d858aeca18483f984c9ee49373625f  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  -                2025-07-07T21:41:24  ac6d8091b0c24c228cea083a4efc345b  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  -                2025-02-10T08:19:05  08a6810e736b40fcb8fdac760ca1c40a  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  -                2025-06-17T10:47:54  80756809419f4396b74a95c3f7212291  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  -                2025-05-22T15:13:18  527b1618e4e24929bc5d8c5d30fdc815  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  -                2025-05-22T15:39:27  50522d61b202448481a7279d43757177  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   -                2025-07-07T21:12:54  1d0a4bcfebe84f01b61b72be36d4054b  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   -                2025-05-22T16:56:36  9ee7b4673d5541d3b7bd4a0d94927efb  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  -                2025-06-24T16:16:43  6fcf87e1ae1243638cf7f445193f6c9c  -
+fsmond               Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  -                2025-06-25T09:56:38  63e0dc8580c04c18b6e7f7f95052a7f9  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb40-dmf-zwsb1-dmf  /gpfs/UP01       2025-07-07T20:36:41  e63a06696389427cbdcc0f89c1cf6f9e  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx03       2025-03-28T16:26:55  4da7ee3e74324cbaa32f9565623edb8e  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx04       2025-06-04T08:20:05  558582db97da482cb9f6418ec784d856  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx04       2025-06-04T08:20:05  a7817feafd53427eb804810852759e83  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx05       2025-05-22T15:19:12  a75fda6631cd44e5801259708c1122b0  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx05       2025-05-22T17:07:09  f6f6fab35c434e0aa25efd1d06574103  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc2-dmf  /gpfs/xx06       2025-06-30T11:32:20  fa4aafdbf70346188bf821f35520edc1  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/xx06       2025-06-30T11:32:20  ce824d16496c4036b83a96dd2b859f15  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx07       2025-04-02T13:49:27  ee3389433d984b3ba64b9dd22011bc27  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx07       2025-05-22T15:19:13  50d31591560d424e912fc9691a086805  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx08       2025-05-22T17:07:09  2f4a9ff71b9d49caaa2ace1b9bc96ae4  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx08       2025-06-04T08:20:05  1294e643ad7b458f858a7b99837467d4  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx09       2025-05-22T15:19:13  4fe27d93ed8c4fa7ba81f135321f8e3d  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx09       2025-06-17T10:38:44  3dc26d42348a4006875a5fd4c0fea87f  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/xx10       2025-05-22T17:07:09  002c5d81bdfe42d09ac3f371e4f90329  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/xx10       2025-06-04T08:20:26  cb36d0bfd9fc414dbbeca7b3e46b5076  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xxA01      2025-05-22T17:07:26  af8585260abf4fe88861bf81012f5d90  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/xxA01      2025-05-27T02:28:53  36ecedc3dd33410fac203e55d8bc4dda  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xxA02      2025-05-22T15:19:13  03183054fea84bffbb3612ec50046cd1  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xxA02      2025-07-07T20:47:24  a55598acd40b4be8a2d807a2fd70a5fe  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xxA03      2025-05-22T17:07:09  bcd899c1b5654ea397ada3f225f5f1e1  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/xxA03      2025-07-07T20:47:24  495d79a400954c3c914aee2de9292348  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/xxI01      2025-06-04T08:20:05  9eb4a7889950452a85803fda956de100  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc2-dmf  /gpfs/xxI01      2025-06-30T11:32:20  e9fcdded0f774a559be8f8fa955cdadf  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/UR01       2025-03-28T14:14:39  13106a0c13354e76a3344cb7f7af11ab  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/UR01       2025-05-22T17:07:09  80cec1804ed841d99fc85f7729019086  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc2-dmf  /gpfs/general00  2025-06-30T11:32:20  cf39da78c48042859ebd4599d561620c  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/general02  2025-05-27T02:28:53  ddb069f3c4a34ee092b35d0fac6920ca  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/general02  2025-06-04T08:20:05  5af506932a4c4a8abf2213f781339831  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/general03  2025-06-04T08:20:05  695fd69047e24cf2bf55d3029dfb9286  -
+job-dispatcher       Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs2-dmf  /gpfs/general03  2025-06-04T08:20:05  62fd3fcfc84d4c08a6396c926da71b94  -
+ls                   Yes        2025-07-28T20:48:04  dmf_library_servers   xxeb39-dmf-mds2-dmf   j00_ls           2025-07-07T21:10:44  f16f0183f0e84e56bb2dd991e3fe7df8  -
+ls                   Yes        2025-07-28T20:48:04  dmf_library_servers   xxeb39-dmf-mds2-dmf   j01_ls           2025-07-07T21:10:44  b68d2339b5854d7db0c97e8a8ff997d0  -
+ls                   Yes        2025-07-28T20:48:04  dmf_library_servers   xxeb39-dmf-mds2-dmf   j02_ls           2025-07-07T21:47:20  43a50397ada24f999bca01a2eefa72c5  -
+ls                   Yes        2025-07-28T20:48:04  dmf_library_servers   xxeb39-dmf-mds2-dmf   p4_ls            2025-07-07T21:10:44  5143ef47a87844e88d87408de950dccc  -
+ls                   Yes        2025-07-28T20:48:04  dmf_library_servers   xxeb39-dmf-mds2-dmf   s4_ls            2025-07-07T21:10:44  e94ae0e4879244e3ae37dd0920619bcd  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/UP01       2024-12-31T07:52:49  f7d43a1fa7f3490aad738351e9931efd  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/UP01       2024-12-31T07:54:31  08f5f5bd3bfe4f1bae6a77e26481971d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/UP01       2024-12-31T07:55:31  e7f2e101d8a0476181cfe21ffca091c7  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/UP01       2024-12-31T07:57:00  822777d9151d496cacd856b4c7761904  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/UP01       2024-12-31T07:58:00  81d45c870baf44a1b613642dfdd8af2b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx03       2024-12-31T07:59:30  e5c82f52b9f940b8aa65e78a94ba02b2  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx03       2024-12-31T08:00:30  892593a4bb8e4973b683ab0277f6d711  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx03       2024-12-31T08:01:30  96a8f74f2b814047b78d6741aeebca40  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx03       2024-12-31T08:03:00  bc20598eabd9464989c3387a762ebeaa  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx03       2024-12-31T08:04:00  833a810c119345619847fd6c8c1b9fef  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xx03       2024-12-31T08:05:30  06f7a0d047b749519f3a562fbeb054a6  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx04       2024-12-31T08:06:30  015eba8d563e4e718567487800de7904  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx04       2024-12-31T08:08:00  f15fa42b741b427b999f0875f3e0bddf  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx04       2024-12-31T08:09:00  44cecc90565f476bab994af3ff124b7d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx04       2024-12-31T08:10:00  c5959f2f23394c998b341fcf3b8044c2  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx04       2024-12-31T08:11:30  ae1e95f728994087ad358057a5f37287  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx05       2024-12-31T08:12:30  71cd8b69058f45078d58e6c3cf210297  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx05       2024-12-31T08:13:30  27a9bb27844243649d1705b3c0bce920  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx05       2024-12-31T08:15:00  ab7fa065f4bf4176bb2a70fa9ea3b4db  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx05       2024-12-31T08:16:00  6226b7156bee4f34be7ccdb59b5508b2  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx05       2024-12-31T08:17:00  5f8d4bd8be77440cb6803af0958989d8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx06       2024-12-31T08:18:30  74efb37942cd44ee9ad4599457c7419d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx06       2024-12-31T08:19:30  7a62e7860eeb46a08ac52d7392a309c8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx06       2024-12-31T08:20:30  baa6628c5d0b4ae68b8d4e180a512e90  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx06       2024-12-31T08:22:00  62e1880b10b94cbaa20c05ab87543338  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx06       2024-12-31T08:23:00  89cbd6277f8c43c3807164c4f7126bcc  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx07       2024-12-31T08:24:00  aa51d7a71bf140138587be01578a0127  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx07       2024-12-31T08:25:30  61fc7836517f4beaa61b7e5e8f8b1b68  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx07       2024-12-31T08:26:30  20477ce4ee7044d4b8adc0632a94db7d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx07       2024-12-31T08:27:30  af88d8ca4941421eacd24eb3353f7dfa  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx07       2024-12-31T08:29:00  6df36c37305a407baa0963e6631c4bd8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx08       2024-12-31T08:30:00  a9c995ecc05e4f5c8611b9328045a9f3  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xx08       2024-12-31T08:31:00  af86fef441fc47ea912e9c14d25f40c1  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx08       2024-12-31T08:32:30  e06604516fd54eb3a9e0fb21ff717d41  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx08       2024-12-31T08:33:30  8488d6b682014161b497f506167a2ab6  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/xx08       2024-12-31T08:34:30  0d6d8cd5b23c48e384fb0af62a712979  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx09       2024-12-31T08:36:00  45304fdea621444c8f2104eb05acd47b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xx09       2024-12-31T08:37:00  f5ff55101b094852ab5f04d411cdb3a3  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xx09       2024-12-31T08:38:00  77f05bb42a2746f9ba3e17643a403895  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xx09       2024-12-31T08:39:30  0f3662df82bf47b58c53a10192b54d00  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx09       2024-12-31T08:40:30  a26b4912a41e4df3996d10550216711a  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xx10       2024-12-31T08:41:31  7e8cb7a3267345e9bf90fae2a440f486  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xx10       2024-12-31T08:43:00  63fa88c14e64487ea7dc55ffa8b0cce8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xx10       2024-12-31T08:44:00  1158b48da0ea4cf99eff6f5d86838912  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xx10       2024-12-31T08:45:00  f64000e3759e4b2488d8e11574823abc  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xx10       2024-12-31T08:46:30  5100f3f5261a4deabbc5805d7c5aa00b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/xxA01      2025-02-24T14:05:56  45f5b5e1eec5418e9bc9563f4e800c05  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxA01      2025-02-25T08:57:25  65389c2e21b64645ae6f642ef1072c78  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xxA01      2025-02-25T08:57:26  4bf2a66f798f4d6c89418da040cf9e3b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xxA01      2025-02-25T08:57:26  fae5aaa382d54786a16bc7623ae598ea  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xxA01      2025-02-25T08:57:26  9f82dfc517064b0c87465afe6529c73d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xxA02      2025-02-25T09:00:55  dbb0f0be2bed4a42b07915bb14659806  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA02      2025-02-25T09:00:55  05b189456b694a488a4e2f16552bd124  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/xxA02      2025-02-25T09:00:55  d7ccdaf89882468eac7cf9789737c4a8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/xxA02      2025-02-25T09:00:56  e8c7580247a94d7293cbce19f23688c2  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/xxA02      2025-02-25T09:00:56  2d37fc287cec4194b2586694b3b700d1  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/xxA03      2025-02-24T14:08:26  11a50482231241168131b1bf02903004  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxA03      2025-02-25T09:03:55  4496331eca424da0a6a871bd08d87a3a  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/xxA03      2025-02-25T09:03:56  bab6ed7ca0a7494980dbc12dec5197ab  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/xxA03      2025-02-25T09:03:56  6f0bf6ff493f452195d99a441860ad1d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db8-dmf    /gpfs/xxA03      2025-02-25T09:03:56  480b80f58fbe4d728f0e381d5b74688e  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:37  aa8967639935451f954ec9bb85d74ccb  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:37  81bdea9c8fb84b20b36345d7415b5f4e  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:37  416b086f65be45dc88a39b49c9d0cfca  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:37  99d08a2cf5cb4fccb5813b97a3ddc5f6  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/xxI01      2025-02-25T08:52:37  083c598df9c44487a04f70abd1021797  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/UR01       2024-12-31T08:47:30  cb83d30826c94f39b60ad9797fd359a7  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/UR01       2024-12-31T08:48:30  bdcfa1859517439982c858aad60e40d7  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/UR01       2024-12-31T08:50:00  d4ec4eb4de264633a0bc77a550377247  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/UR01       2024-12-31T08:51:00  fbab59f20cee426a8bae6925c9b7f04b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/UR01       2024-12-31T08:52:00  6cb4dea5e7c44893bd9a3597cd574321  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/UR01       2024-12-31T08:53:30  1289db5165044624ba782f8d67cebe5d  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/general00  2024-12-31T07:27:28  606594fea95f4c13be4c7678d126dacf  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/general00  2024-12-31T07:29:01  34fda313beb741f9b6aa85dce0bef311  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/general00  2024-12-31T07:30:00  5be63f39f65e486191898df85c21f910  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/general00  2024-12-31T07:31:01  046aea8e33d84c7d87e25ae60b7b8cb7  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general00  2024-12-31T07:32:31  a71eefbc20864a8d8ffe976524d0f29b  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db10-dmf   /gpfs/general00  2024-12-31T07:33:30  764e75ec16194ae1aee298498b0117d5  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    /gpfs/general02  2024-12-31T08:54:30  2d53994079d0428bbee1cc8f8aae25bd  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/general02  2024-12-31T08:55:30  db4790abac3f44ef9880b46659adccb6  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db3-dmf    /gpfs/general02  2024-12-31T08:57:00  b2b9b47977ce42aeba815862fd0a9d36  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db2-dmf    /gpfs/general02  2024-12-31T08:58:00  1e846feb19e540c7a3dac4a0d4e48bce  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/general02  2024-12-31T08:59:00  35fac4786b0347f5a84d3a0eb363bc65  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db9-dmf    /gpfs/general03  2025-03-14T09:58:26  f67c28d83a704300815a62bbdd72b775  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db1-dmf    /gpfs/general03  2025-03-14T10:37:56  d7eaf5d15c724aaeb17d26f6dd3b4bc8  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db4-dmf    /gpfs/general03  2025-03-14T10:37:56  cd9c4c41a8fb4272bdb2157eef999c30  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db5-dmf    /gpfs/general03  2025-03-14T10:37:56  b7cb4a4ed1a640cf8105818e49d32ac7  -
+metadata-manager     Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    /gpfs/general03  2025-03-14T10:37:56  8a48ebe2f07e4895b99e8a89c042a9d5  -
+monitor              Yes        2025-07-28T20:48:04  xxeb39-dmf-db5        xxeb39-dmf-db5-dmf    -                2024-12-29T07:40:02  37935c7d70ee479f99032c3aaa2e73ee  -
+movefs-agent         Yes        2025-07-28T20:48:04  dmf_movefs_agents     xxeb39-dmf-gpfs2-dmf  /gpfs/dmfTemp    2025-06-04T08:20:26  dbf558c42c6142f3b4dd392043c8199c  -
+noded                Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa1      xxeb37-dmf-zwsa1-dmf  -                2025-07-24T10:17:50  c80d47e98acf48ddab1eb3c118c0304b  -
+noded                Yes        2025-07-28T20:48:04  xxeb37-dmf-zwsa2      xxeb37-dmf-zwsa2-dmf  -                2025-07-07T21:41:26  d171a86711b547d6bbc878112be9cd5a  -
+noded                Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc1      xxeb38-dmf-zwsc1-dmf  -                2025-02-10T08:19:05  f243789c1092421ba10309b20e399aa0  -
+noded                Yes        2025-07-28T20:48:04  xxeb38-dmf-zwsc2      xxeb38-dmf-zwsc2-dmf  -                2025-06-17T10:47:55  f5fade75a04e41a48a9b3712e18ad41a  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db1        xxeb39-dmf-db1-dmf    -                2024-12-17T05:58:30  7f6fb404ec734f05b6e415cf1081548b  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db10       xxeb39-dmf-db10-dmf   -                2024-12-17T05:58:30  adb3dcd38dcd4d1b9372a30ce7d1bbe7  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db2        xxeb39-dmf-db2-dmf    -                2024-12-17T05:58:11  6853d79874db401ca393c70376907478  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db3        xxeb39-dmf-db3-dmf    -                2024-12-17T05:58:11  cd04aaccdbdd45fa9c22f9c6e6fb927c  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db4        xxeb39-dmf-db4-dmf    -                2024-12-17T05:58:11  e669a3a7463e4609a6d769f4cb61c013  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db5        xxeb39-dmf-db5-dmf    -                2024-12-17T05:58:30  58a31a7f94394a9fa7e94b3ed1653bb2  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db6        xxeb39-dmf-db6-dmf    -                2024-12-17T05:58:30  c9354c998ef74c1799c375455c80deaa  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db7        xxeb39-dmf-db7-dmf    -                2024-12-17T05:58:11  31abbdd4dc0541b08231015d3678e392  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db8        xxeb39-dmf-db8-dmf    -                2024-12-17T05:58:30  a4b433bead6946cc935320b9c5e6c4ab  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-db9        xxeb39-dmf-db9-dmf    -                2024-12-17T05:58:11  f078dbb657b94b2caa98f5203007202f  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs1      xxeb39-dmf-gpfs1-dmf  -                2025-05-22T15:13:19  ddcb1bcef21049b1b5916915864c6737  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-gpfs2      xxeb39-dmf-gpfs2-dmf  -                2025-05-22T15:39:26  3f2ad7b8ff3343de9c52c103a8f5bf58  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-mds1       xxeb39-dmf-mds1-dmf   -                2025-07-07T21:12:53  fa5f4c71970347de8b6ee5c06ad25583  -
+noded                Yes        2025-07-28T20:48:04  xxeb39-dmf-mds2       xxeb39-dmf-mds2-dmf   -                2025-05-22T16:56:36  eea8101059c542c9901e755c016e8702  -
+noded                Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb1      xxeb40-dmf-zwsb1-dmf  -                2025-06-24T16:16:43  8c416d75c7d1492a991b212965eee354  -
+noded                Yes        2025-07-28T20:48:04  xxeb40-dmf-zwsb2      xxeb40-dmf-zwsb2-dmf  -                2025-06-25T09:56:38  7766c2604eaa46b1be8cdedb6513a3ce  -
+ns-alert             Yes        2025-07-28T20:48:04  dmf_library_admins    xxeb39-dmf-mds2-dmf   -                2025-05-22T17:07:09  96f8c48a57284adc9d58134f83e673b8  -
+ns-perf              Yes        2025-07-28T20:48:04  dmf_library_admins    xxeb39-dmf-mds2-dmf   -                2025-07-07T21:10:44  c9546705fb1849c68a0ce70c3605372e  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db1        xxeb39-dmf-db1-dmf    -                2025-07-16T10:39:14  b713aabf87fa48fea28c85e67040a1ef  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db10       xxeb39-dmf-db10-dmf   -                2025-07-16T10:39:13  56a0a41df1e54b3194b49cf7cf8b4567  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db2        xxeb39-dmf-db2-dmf    -                2025-07-16T10:39:14  8a3664ecb85b4cc5adb8a3f370e8edec  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db3        xxeb39-dmf-db3-dmf    -                2025-07-16T10:39:13  b14527cd735e4dffb32e08d60b07ee2a  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db4        xxeb39-dmf-db4-dmf    -                2025-07-16T10:39:13  606aff4fafb84230b2fedb48a52fe724  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db5        xxeb39-dmf-db5-dmf    -                2025-07-16T10:39:13  65f3cd94d9c14f0ea44c9eadaa8f543e  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db6        xxeb39-dmf-db6-dmf    -                2025-07-16T10:38:49  75e69af9b65b49fdb6a9de11d7e1128a  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db7        xxeb39-dmf-db7-dmf    -                2025-07-16T10:39:13  ffea709d2f0346a9b69291f25f711a16  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db8        xxeb39-dmf-db8-dmf    -                2025-07-16T10:39:13  290f9e13f3554921a76a380e82cb50b2  -
+object-sweeper       Yes        2025-07-28T20:48:04  xxeb39-dmf-db9        xxeb39-dmf-db9-dmf    -                2025-07-16T10:39:13  bc8914ebd7344884b2ba7400b49b5460  -
+pack-cache-agent     Yes        2025-07-28T20:48:04  dmf_movefs_agents     xxeb39-dmf-gpfs1-dmf  /gpfs/dmfTemp    2025-06-04T08:20:05  370aae92939a4db3bb6ebe95af417b38  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/UP01       2025-04-02T13:49:56  fe355c49ae744f078dbfab221df15747  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb40-dmf-zwsb2-dmf  /gpfs/xx03       2025-07-07T21:24:13  7371509f459c4846bcacd92116e4e388  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx04       2025-05-27T02:28:53  53a3301cb00c498898440452985d1296  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx05       2025-03-28T16:26:55  60ecc7b94423495fb417b7a175403d39  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx06       2025-06-04T08:20:05  d81f6acd38fa4818974c2783a7c28f7a  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx07       2025-05-27T02:28:53  dd4a104259244396bf49e0270116f79e  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xx08       2025-03-28T16:26:55  fb82c3aff4a24be2aec6c446afb63a95  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx09       2025-05-22T15:19:12  3ffe5073959f4ed7bd50bee856b08abe  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xx10       2025-05-22T15:19:12  a76462de7f69494b83b5db58cdbad010  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/xxA01      2025-07-07T21:24:13  7242ca41b9b34378ac4fff384e41a55c  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-gpfs1-dmf  /gpfs/xxA02      2025-05-27T02:28:53  ea6e873fcf7b4fb4aeca26651fba42fb  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xxA03      2025-02-24T14:08:26  0ec7dfa7c6a7426cb2e0833babf56485  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/xxI01      2025-04-02T13:49:27  a474bfbafa4c45aba61d8de0074eed8d  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/UR01       2025-05-22T17:07:09  98b71963a2ad4d23ba192c7878b08c73  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc1-dmf  /gpfs/general00  2025-06-17T10:38:44  c1a2140ea52444b4998a8e1b6b7754bd  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb38-dmf-zwsc2-dmf  /gpfs/general02  2025-06-30T11:32:20  3fa4563e52dc4b9ab5884c28ce92c5f1  -
+path-resolver        Yes        2025-07-28T20:48:04  dmf_gpfs_agents       xxeb39-dmf-mds2-dmf   /gpfs/general03  2025-06-24T15:56:13  01c41e9579a348b4be630cd4cacd94cf  -
+policy               Yes        2025-07-28T20:48:04  dmf_database_servers  xxeb39-dmf-db6-dmf    -                2025-07-28T09:44:27  2e51a44117ad446f94ac1c8dfc7a6c46  -
+query                Yes        2025-07-28T20:48:04  dmf_database_servers  xxeb39-dmf-db3-dmf    -                2025-07-28T09:46:37  d51ece68d1b0452786d1676ac37769db  -
+srf                  Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db7-dmf    -                2025-07-24T10:07:13  365f84d48fa0481593ce3b8bccf5001a  -
+syscheck             Yes        2025-07-28T20:48:04  dmf_core_servers      xxeb39-dmf-db6-dmf    -                2024-12-29T01:22:00  d8e58f0b415f43669c05f4674b7b9d88  -
+
+DMF_CLI: Healthy
+================
+Node              Healthy    Assessed (AEST)
+----------------  ---------  -------------------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:46:49
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:46:50
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:46:51
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:46:52
+xxeb39-dmf-db1    Yes        2025-07-28T20:46:53
+xxeb39-dmf-db10   Yes        2025-07-28T20:46:53
+xxeb39-dmf-db2    Yes        2025-07-28T20:46:54
+xxeb39-dmf-db3    Yes        2025-07-28T20:46:54
+xxeb39-dmf-db4    Yes        2025-07-28T20:46:54
+xxeb39-dmf-db5    Yes        2025-07-28T20:46:55
+xxeb39-dmf-db6    Yes        2025-07-28T20:46:55
+xxeb39-dmf-db7    Yes        2025-07-28T20:46:56
+xxeb39-dmf-db8    Yes        2025-07-28T20:46:56
+xxeb39-dmf-db9    Yes        2025-07-28T20:46:56
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:46:57
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:46:57
+xxeb39-dmf-mds1   Yes        2025-07-28T20:46:58
+xxeb39-dmf-mds2   Yes        2025-07-28T20:46:59
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:46:59
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:00
+
+DMF_DAEMONS: Healthy
+====================
+Service                Healthy    Assessed (AEST)      Node              Filesystem       Started (AEST)       ActiveState    SubState    UnitFileState
+---------------------  ---------  -------------------  ----------------  ---------------  -------------------  -------------  ----------  ---------------
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:15  xxeb37-dmf-zwsa1  -                2025-07-18T13:55:32  active         running     enabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:15  xxeb37-dmf-zwsa2  -                2025-07-07T11:37:09  active         running     enabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:16  xxeb38-dmf-zwsc1  -                2024-12-16T19:56:14  active         running     enabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:16  xxeb38-dmf-zwsc2  -                2025-07-07T05:44:44  active         running     enabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:17  xxeb39-dmf-gpfs1  -                2025-07-07T06:24:23  active         running     disabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:17  xxeb39-dmf-gpfs2  -                2025-07-07T06:59:20  active         running     disabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:17  xxeb39-dmf-mds1   -                2025-07-07T06:14:37  active         running     disabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:18  xxeb39-dmf-mds2   -                2025-07-07T06:24:30  active         running     disabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:18  xxeb40-dmf-zwsb1  -                2025-06-24T06:13:44  active         running     enabled
+dmf-gpfs-daemon        Yes        2025-07-28T20:47:18  xxeb40-dmf-zwsb2  -                2025-06-24T23:47:12  active         running     enabled
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:19  xxeb40-dmf-zwsb2  /gpfs/UP01       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:24  xxeb37-dmf-zwsa1  /gpfs/xx03       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:21  xxeb38-dmf-zwsc1  /gpfs/xx04       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:21  xxeb38-dmf-zwsc1  /gpfs/xx05       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xx06       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:21  xxeb38-dmf-zwsc1  /gpfs/xx07       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xx08       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xx09       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xx10       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:22  xxeb39-dmf-gpfs2  /gpfs/xxA01      -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xxA02      -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:22  xxeb39-dmf-gpfs2  /gpfs/xxA03      -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb39-dmf-gpfs1  /gpfs/xxI01      -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:19  xxeb40-dmf-zwsb2  /gpfs/UR01       -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:23  xxeb37-dmf-zwsa2  /gpfs/general00  -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:19  xxeb40-dmf-zwsb2  /gpfs/general02  -                    -              -           -
+dmf-gpfs-event-filter  Yes        2025-07-28T20:47:22  xxeb39-dmf-gpfs2  /gpfs/general03  -                    -              -           -
+
+DMFSERVICES: Healthy
+====================
+Node              Healthy    Assessed (AEST)      Started (AEST)
+----------------  ---------  -------------------  -------------------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:47:43  2025-07-27T23:28:17
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:47:45  2025-07-07T11:41:07
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:47:46  2025-02-10T08:01:39
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:47:48  2025-06-17T00:47:40
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:47:49  2025-05-22T05:12:32
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:47:50  2025-05-22T05:39:07
+xxeb39-dmf-mds1   Yes        2025-07-28T20:47:51  2025-05-22T07:26:37
+xxeb39-dmf-mds2   Yes        2025-07-28T20:47:52  2025-05-22T06:56:07
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:53  2025-06-24T06:16:20
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:54  2025-06-24T23:56:27
+
+REGISTERED_FILESYSTEMS: Healthy
+===============================
+Name       Healthy    Assessed (AEST)      Mount Point      Type    Usage    State    Missing From
+---------  ---------  -------------------  ---------------  ------  -------  -------  --------------
+UP01       Yes        2025-07-28T20:47:07  /gpfs/UP01       gpfs    69%      Run      -
+xx03       Yes        2025-07-28T20:47:07  /gpfs/xx03       gpfs    70%      Run      -
+xx04       Yes        2025-07-28T20:47:07  /gpfs/xx04       gpfs    62%      Run      -
+xx05       Yes        2025-07-28T20:47:07  /gpfs/xx05       gpfs    66%      Run      -
+xx06       Yes        2025-07-28T20:47:07  /gpfs/xx06       gpfs    78%      Run      -
+xx07       Yes        2025-07-28T20:47:07  /gpfs/xx07       gpfs    80%      Run      -
+xx08       Yes        2025-07-28T20:47:07  /gpfs/xx08       gpfs    70%      Run      -
+xx09       Yes        2025-07-28T20:47:07  /gpfs/xx09       gpfs    1%       Run      -
+xx10       Yes        2025-07-28T20:47:07  /gpfs/xx10       gpfs    1%       Run      -
+xxA01      Yes        2025-07-28T20:47:07  /gpfs/xxA01      gpfs    4%       Run      -
+xxA02      Yes        2025-07-28T20:47:07  /gpfs/xxA02      gpfs    1%       Run      -
+xxA03      Yes        2025-07-28T20:47:07  /gpfs/xxA03      gpfs    1%       Run      -
+xxI01      Yes        2025-07-28T20:47:07  /gpfs/xxI01      gpfs    1%       Run      -
+UR01       Yes        2025-07-28T20:47:07  /gpfs/UR01       gpfs    1%       Run      -
+general00  Yes        2025-07-28T20:47:07  /gpfs/general00  gpfs    76%      Run      -
+general02  Yes        2025-07-28T20:47:07  /gpfs/general02  gpfs    64%      Run      -
+general03  Yes        2025-07-28T20:47:07  /gpfs/general03  gpfs    1%       Run      -
+movefs01   Yes        2025-07-28T20:47:07  /gpfs/dmfTemp    movefs  1%       Run      -
+
+CASSANDRA: Healthy
+==================
+Node                 Healthy    Assessed (AEST)      Sees As Down    Seen Down By    Started (AEST)       ActiveState    SubState    UnitFileState
+-------------------  ---------  -------------------  --------------  --------------  -------------------  -------------  ----------  ---------------
+xxeb39-dmf-db1-dmf   Yes        2025-07-28T20:47:52  -               -               2024-12-20T04:26:29  active         running     enabled
+xxeb39-dmf-db10-dmf  Yes        2025-07-28T20:47:54  -               -               2024-12-20T04:22:34  active         running     enabled
+xxeb39-dmf-db2-dmf   Yes        2025-07-28T20:47:52  -               -               2024-12-20T04:33:23  active         running     enabled
+xxeb39-dmf-db3-dmf   Yes        2025-07-28T20:47:52  -               -               2024-12-20T04:43:21  active         running     enabled
+xxeb39-dmf-db4-dmf   Yes        2025-07-28T20:47:52  -               -               2025-01-11T21:25:45  active         running     enabled
+xxeb39-dmf-db5-dmf   Yes        2025-07-28T20:47:53  -               -               2025-05-24T21:57:33  active         running     enabled
+xxeb39-dmf-db6-dmf   Yes        2025-07-28T20:47:53  -               -               2024-12-20T04:18:14  active         running     enabled
+xxeb39-dmf-db7-dmf   Yes        2025-07-28T20:47:53  -               -               2024-12-20T05:32:56  active         running     enabled
+xxeb39-dmf-db8-dmf   Yes        2025-07-28T20:47:53  -               -               2024-12-20T04:13:21  active         running     enabled
+xxeb39-dmf-db9-dmf   Yes        2025-07-28T20:47:54  -               -               2024-12-20T04:08:24  active         running     enabled
+
+CASSANDRA_FILESYSTEM_USAGE: Healthy
+===================================
+Node             Healthy    Assessed (AEST)      /dmf7/db1/cassandra/data    /dmf7/db2/cassandra/data    /dmf7/db3/cassandra/data    /dmf7/db4/cassandra/data    /dmf7/db5/cassandra/data    /dmf7/dmf/cassandra/commitlog    /dmf7/dmf/cassandra/hints
+---------------  ---------  -------------------  --------------------------  --------------------------  --------------------------  --------------------------  --------------------------  -------------------------------  ---------------------------
+xxeb39-dmf-db1   Yes        2025-07-28T20:47:36  33%                         38%                         34%                         33%                         33%                         5%                               5%
+xxeb39-dmf-db10  Yes        2025-07-28T20:47:38  44%                         42%                         42%                         43%                         44%                         7%                               7%
+xxeb39-dmf-db2   Yes        2025-07-28T20:47:39  47%                         52%                         50%                         46%                         47%                         5%                               5%
+xxeb39-dmf-db3   Yes        2025-07-28T20:47:40  46%                         46%                         44%                         45%                         50%                         5%                               5%
+xxeb39-dmf-db4   Yes        2025-07-28T20:47:41  47%                         46%                         45%                         50%                         44%                         4%                               4%
+xxeb39-dmf-db5   Yes        2025-07-28T20:47:43  47%                         49%                         48%                         46%                         51%                         5%                               5%
+xxeb39-dmf-db6   Yes        2025-07-28T20:47:44  48%                         46%                         47%                         45%                         45%                         5%                               5%
+xxeb39-dmf-db7   Yes        2025-07-28T20:47:45  49%                         46%                         46%                         48%                         45%                         5%                               5%
+xxeb39-dmf-db8   Yes        2025-07-28T20:47:46  50%                         48%                         48%                         49%                         49%                         5%                               5%
+xxeb39-dmf-db9   Yes        2025-07-28T20:47:47  44%                         48%                         43%                         46%                         45%                         4%                               4%
+
+REDIS: Healthy
+==============
+Node            Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    Role
+--------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  -------
+xxeb39-dmf-db1  Yes        2025-07-28T20:47:12  2024-12-16T19:47:13  active         running     enabled          master
+xxeb39-dmf-db2  Yes        2025-07-28T20:47:12  2024-12-16T19:47:13  active         running     enabled          replica
+xxeb39-dmf-db3  Yes        2025-07-28T20:47:12  2024-12-16T19:47:13  active         running     enabled          replica
+
+ZOOKEEPER: Healthy
+==================
+Node                Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    Mode        Connections    Entries
+------------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  --------  -------------  ---------
+xxeb39-dmf-db1-dmf  Yes        2025-07-28T20:47:48  2024-08-14T00:02:25  active         running     enabled          follower            355      11709
+xxeb39-dmf-db2-dmf  Yes        2025-07-28T20:47:48  2024-08-14T00:02:25  active         running     enabled          leader              421      11709
+xxeb39-dmf-db3-dmf  Yes        2025-07-28T20:47:48  2024-08-14T00:02:25  active         running     enabled          follower            383      11709
+
+HAPROXY: Healthy
+================
+Node              Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    ft_api    bk_api                                                                                                                                                  ft_redis    bk_redis        ft_rpc    bk_rpc
+----------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  --------  ------------------------------------------------------------------------------------------------------------------------------------------------------  ----------  --------------  --------  ------------------------------------------------------------------------------------------------------------------------------------------------------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:46:47  2025-07-18T13:39:28  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:46:48  2024-12-10T11:25:02  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:46:48  2024-09-09T11:50:57  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:46:50  2025-04-02T03:59:13  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db1    Yes        2025-07-28T20:46:51  2024-10-06T10:11:38  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db10   Yes        2025-07-28T20:46:51  2024-08-08T11:40:51  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db2    Yes        2025-07-28T20:46:51  2024-10-06T16:59:16  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db3    Yes        2025-07-28T20:46:51  2024-10-07T12:05:16  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db4    Yes        2025-07-28T20:46:52  2024-08-06T07:55:38  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db5    Yes        2025-07-28T20:46:52  2024-10-06T01:13:43  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db6    Yes        2025-07-28T20:46:52  2024-08-06T02:08:44  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db7    Yes        2025-07-28T20:46:52  2024-12-20T05:34:33  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db8    Yes        2025-07-28T20:46:53  2024-08-06T00:32:54  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-db9    Yes        2025-07-28T20:46:53  2024-12-20T04:09:58  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:46:53  2024-10-08T05:02:23  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:46:54  2024-08-08T10:27:51  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-mds1   Yes        2025-07-28T20:46:54  2025-04-11T07:39:06  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb39-dmf-mds2   Yes        2025-07-28T20:46:55  2024-12-05T02:22:49  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:46:55  2024-12-02T00:27:55  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:46:56  2024-08-08T02:16:16  active         running     enabled          Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9  Open        xxeb39-dmf-db1  Open      xxeb39-dmf-db1,xxeb39-dmf-db10,xxeb39-dmf-db2,xxeb39-dmf-db3,xxeb39-dmf-db4,xxeb39-dmf-db5,xxeb39-dmf-db6,xxeb39-dmf-db7,xxeb39-dmf-db8,xxeb39-dmf-db9
+
+KAFKA: Healthy
+==============
+Node                 Healthy    Assessed (AEST)        Id  Started (AEST)       ActiveState    SubState    UnitFileState
+-------------------  ---------  -------------------  ----  -------------------  -------------  ----------  ---------------
+xxeb39-dmf-db1-dmf   Yes        2025-07-28T20:47:22  1002  2024-08-06T12:53:48  active         running     enabled
+xxeb39-dmf-db10-dmf  Yes        2025-07-28T20:47:23  1010  2024-08-08T11:40:51  active         running     enabled
+xxeb39-dmf-db2-dmf   Yes        2025-07-28T20:47:22  1001  2024-08-06T11:38:45  active         running     enabled
+xxeb39-dmf-db3-dmf   Yes        2025-07-28T20:47:22  1004  2024-08-06T09:33:30  active         running     enabled
+xxeb39-dmf-db4-dmf   Yes        2025-07-28T20:47:22  1005  2024-08-06T07:55:38  active         running     enabled
+xxeb39-dmf-db5-dmf   Yes        2025-07-28T20:47:22  1003  2024-08-06T05:16:10  active         running     enabled
+xxeb39-dmf-db6-dmf   Yes        2025-07-28T20:47:22  1006  2024-08-06T02:10:12  active         running     enabled
+xxeb39-dmf-db7-dmf   Yes        2025-07-28T20:47:22  1008  2024-08-06T01:24:05  active         running     enabled
+xxeb39-dmf-db8-dmf   Yes        2025-07-28T20:47:23  1007  2024-08-06T00:34:21  active         running     enabled
+xxeb39-dmf-db9-dmf   Yes        2025-07-28T20:47:23  1009  2024-08-05T23:41:36  active         running     enabled
+
+MARATHON: Healthy
+=================
+Node                 Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    Leader
+-------------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  --------------
+xxeb39-dmf-db1-dmf   Yes        2025-07-28T20:47:39  2025-06-24T05:45:44  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db10-dmf  Yes        2025-07-28T20:47:42  2025-01-20T23:38:11  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db2-dmf   Yes        2025-07-28T20:47:40  2025-02-05T02:38:05  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db3-dmf   Yes        2025-07-28T20:47:40  2025-02-05T02:39:21  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db4-dmf   Yes        2025-07-28T20:47:40  2025-02-05T02:41:54  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db5-dmf   Yes        2025-07-28T20:47:40  2025-02-05T02:40:37  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db6-dmf   Yes        2025-07-28T20:47:41  2025-01-20T23:31:44  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db7-dmf   Yes        2025-07-28T20:47:41  2025-01-20T23:32:48  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db8-dmf   Yes        2025-07-28T20:47:41  2025-01-20T23:35:39  active         running     enabled          xxeb39-dmf-db6
+xxeb39-dmf-db9-dmf   Yes        2025-07-28T20:47:41  2025-01-20T23:36:55  active         running     enabled          xxeb39-dmf-db6
+
+MESOS: Healthy
+==============
+Node              Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    Role    Leader              Active
+----------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  ------  ------------------  --------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:46:55  2025-07-24T00:17:47  active         running     enabled          Agent   -                   Yes
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:46:56  2025-07-07T11:41:19  active         running     enabled          Agent   -                   Yes
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:46:56  2025-02-09T22:19:04  active         running     enabled          Agent   -                   Yes
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:46:57  2025-06-17T00:47:53  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db1    Yes        2025-07-28T20:46:57  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db10   Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db2    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db3    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db4    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db5    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db6    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db7    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db8    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db9    Yes        2025-07-28T20:46:58  2024-08-14T00:04:42  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:46:59  2025-05-22T05:13:16  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:46:59  2025-05-22T05:39:24  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-mds1   Yes        2025-07-28T20:46:59  2025-07-07T11:12:52  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-mds2   Yes        2025-07-28T20:46:59  2025-05-22T06:56:33  active         running     enabled          Agent   -                   Yes
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:00  2025-06-24T06:16:39  active         running     enabled          Agent   -                   Yes
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:00  2025-06-24T23:56:36  active         running     enabled          Agent   -                   Yes
+xxeb39-dmf-db1    Yes        2025-07-28T20:46:53  2025-06-24T05:44:52  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db10   Yes        2025-07-28T20:46:53  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db2    Yes        2025-07-28T20:46:53  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db3    Yes        2025-07-28T20:46:53  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db4    Yes        2025-07-28T20:46:54  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db5    Yes        2025-07-28T20:46:54  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db6    Yes        2025-07-28T20:46:54  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db7    Yes        2025-07-28T20:46:54  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db8    Yes        2025-07-28T20:46:55  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+xxeb39-dmf-db9    Yes        2025-07-28T20:46:55  2024-12-16T19:46:57  active         running     enabled          Master  xxeb39-dmf-db6-dmf  -
+
+METRONOME: Healthy
+==================
+Node             Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState
+---------------  ---------  -------------------  -------------------  -------------  ----------  ---------------
+xxeb39-dmf-db1   Yes        2025-07-28T20:48:01  2024-12-16T19:57:28  active         running     enabled
+xxeb39-dmf-db10  Yes        2025-07-28T20:48:01  2024-12-16T19:57:29  active         running     enabled
+xxeb39-dmf-db2   Yes        2025-07-28T20:48:01  2024-12-16T19:57:28  active         running     enabled
+xxeb39-dmf-db3   Yes        2025-07-28T20:48:01  2024-12-16T19:57:29  active         running     enabled
+xxeb39-dmf-db4   Yes        2025-07-28T20:48:02  2024-12-16T19:57:29  active         running     enabled
+xxeb39-dmf-db5   Yes        2025-07-28T20:48:02  2024-12-16T19:57:29  active         running     enabled
+xxeb39-dmf-db6   Yes        2025-07-28T20:48:02  2025-01-21T00:45:00  active         running     enabled
+xxeb39-dmf-db7   Yes        2025-07-28T20:48:02  2025-02-05T05:49:56  active         running     enabled
+xxeb39-dmf-db8   Yes        2025-07-28T20:48:03  2025-04-07T02:09:35  active         running     enabled
+xxeb39-dmf-db9   Yes        2025-07-28T20:48:03  2025-06-24T05:44:43  active         running     enabled
+
+REDIS_SENTINEL: Healthy
+=======================
+Node            Healthy    Assessed (AEST)      Started (AEST)       ActiveState    SubState    UnitFileState    Quorum
+--------------  ---------  -------------------  -------------------  -------------  ----------  ---------------  --------
+xxeb39-dmf-db1  Yes        2025-07-28T20:47:21  2024-12-16T19:47:27  active         running     enabled          Yes
+xxeb39-dmf-db2  Yes        2025-07-28T20:47:22  2024-12-16T19:47:27  active         running     enabled          Yes
+xxeb39-dmf-db3  Yes        2025-07-28T20:47:22  2024-12-16T19:47:27  active         running     enabled          Yes
+
+FILESYSTEM_USAGE: Healthy
+=========================
+Node              Healthy    Assessed (AEST)      /    /var/hpe/dmf/lib    /var/log/hpe/dmf
+----------------  ---------  -------------------  ---  ------------------  ------------------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:46:50  83%  83%                 2%
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:46:51  81%  81%                 2%
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:46:53  88%  88%                 2%
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:46:55  85%  85%                 1%
+xxeb39-dmf-db1    Yes        2025-07-28T20:46:57  78%  5%                  5%
+xxeb39-dmf-db10   Yes        2025-07-28T20:46:58  44%  7%                  4%
+xxeb39-dmf-db2    Yes        2025-07-28T20:46:58  76%  5%                  6%
+xxeb39-dmf-db3    Yes        2025-07-28T20:46:59  67%  5%                  5%
+xxeb39-dmf-db4    Yes        2025-07-28T20:46:59  75%  4%                  5%
+xxeb39-dmf-db5    Yes        2025-07-28T20:47:00  78%  5%                  3%
+xxeb39-dmf-db6    Yes        2025-07-28T20:47:00  46%  5%                  3%
+xxeb39-dmf-db7    Yes        2025-07-28T20:47:01  46%  5%                  4%
+xxeb39-dmf-db8    Yes        2025-07-28T20:47:01  46%  5%                  3%
+xxeb39-dmf-db9    Yes        2025-07-28T20:47:02  31%  4%                  3%
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:47:02  82%  82%                 2%
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:47:04  76%  76%                 2%
+xxeb39-dmf-mds1   Yes        2025-07-28T20:47:05  55%  55%                 2%
+xxeb39-dmf-mds2   Yes        2025-07-28T20:47:06  71%  71%                 4%
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:07  63%  63%                 1%
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:09  65%  65%                 1%
+
+LOAD_AVERAGE: Healthy
+=====================
+Node              Healthy    Assessed (AEST)        Processors    1 min    5 min    15 min
+----------------  ---------  -------------------  ------------  -------  -------  --------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:47:37            64    12       11.98     11.99
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:47:38            64    12.81    12.27     12.45
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:47:38            96    18.47    18.73     20.18
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:47:39            96    12.81    13.05     13.75
+xxeb39-dmf-db1    Yes        2025-07-28T20:47:39            48     2.92     3.79      4.4
+xxeb39-dmf-db10   Yes        2025-07-28T20:47:39            64     2.3      2         2.51
+xxeb39-dmf-db2    Yes        2025-07-28T20:47:40            48     2.58     2.89      3.87
+xxeb39-dmf-db3    Yes        2025-07-28T20:47:40            48     6        5.85      6.72
+xxeb39-dmf-db4    Yes        2025-07-28T20:47:40            48     2.48     2.77      3.51
+xxeb39-dmf-db5    Yes        2025-07-28T20:47:40            48     6.78     6.38      7.09
+xxeb39-dmf-db6    Yes        2025-07-28T20:47:40            64     4.2      4.36      4.96
+xxeb39-dmf-db7    Yes        2025-07-28T20:47:40            64     2.16     1.93      2.52
+xxeb39-dmf-db8    Yes        2025-07-28T20:47:40            64     2.02     1.98      2.6
+xxeb39-dmf-db9    Yes        2025-07-28T20:47:40            64     2.07     2.27      2.59
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:47:40            80     3.57     5.37      6.35
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:47:41            80     3.78     3.29      4.17
+xxeb39-dmf-mds1   Yes        2025-07-28T20:47:41            48     3.23     3.16      3.84
+xxeb39-dmf-mds2   Yes        2025-07-28T20:47:41            48     3.91     4.14      4.8
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:41            64    22.53    21.47     22.14
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:42            64    24.37    22.8      24.16
+
+MEMORY: Healthy
+===============
+Node              Healthy    Assessed (AEST)      MemTotal    MemFree     MemAvailable    Buffers     Cached      Slab
+----------------  ---------  -------------------  ----------  ----------  --------------  ----------  ----------  ----------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:47:01  0251.1 GiB  0042.2 GiB  0058.7 GiB      0826.6 MiB  0018.2 GiB  0004.9 GiB
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:47:01  0251.1 GiB  0002.8 GiB  0020.0 GiB      0746.6 MiB  0018.7 GiB  0005.8 GiB
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:47:02  0503.1 GiB  0193.1 GiB  0251.3 GiB      0522.0 MiB  0055.3 GiB  0013.8 GiB
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:47:02  0503.1 GiB  0218.2 GiB  0264.3 GiB      0536.1 MiB  0046.4 GiB  0010.3 GiB
+xxeb39-dmf-db1    Yes        2025-07-28T20:47:03  0377.0 GiB  0003.2 GiB  0162.4 GiB      0024.2 MiB  0160.2 GiB  0006.0 GiB
+xxeb39-dmf-db10   Yes        2025-07-28T20:47:03  0503.1 GiB  0007.0 GiB  0292.2 GiB      0028.2 MiB  0285.1 GiB  0007.8 GiB
+xxeb39-dmf-db2    Yes        2025-07-28T20:47:03  0377.0 GiB  0004.2 GiB  0134.8 GiB      0033.0 MiB  0132.2 GiB  0005.7 GiB
+xxeb39-dmf-db3    Yes        2025-07-28T20:47:03  0377.0 GiB  0004.1 GiB  0159.7 GiB      0048.7 MiB  0155.7 GiB  0006.2 GiB
+xxeb39-dmf-db4    Yes        2025-07-28T20:47:03  0377.0 GiB  0002.8 GiB  0165.5 GiB      0028.2 MiB  0162.4 GiB  0006.3 GiB
+xxeb39-dmf-db5    Yes        2025-07-28T20:47:03  0377.0 GiB  0002.7 GiB  0161.0 GiB      0027.0 MiB  0158.4 GiB  0006.1 GiB
+xxeb39-dmf-db6    Yes        2025-07-28T20:47:03  0503.1 GiB  0003.0 GiB  0276.5 GiB      0027.6 MiB  0273.5 GiB  0007.3 GiB
+xxeb39-dmf-db7    Yes        2025-07-28T20:47:03  0503.1 GiB  0003.1 GiB  0279.1 GiB      0027.0 MiB  0275.8 GiB  0007.5 GiB
+xxeb39-dmf-db8    Yes        2025-07-28T20:47:03  0503.1 GiB  0002.7 GiB  0278.4 GiB      0028.6 MiB  0275.6 GiB  0007.4 GiB
+xxeb39-dmf-db9    Yes        2025-07-28T20:47:03  0503.1 GiB  0003.1 GiB  0292.0 GiB      0025.5 MiB  0288.8 GiB  0007.3 GiB
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:47:04  0188.0 GiB  0004.0 GiB  0055.7 GiB      0138.4 MiB  0051.4 GiB  0007.0 GiB
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:47:04  0188.0 GiB  0034.6 GiB  0071.3 GiB      0138.7 MiB  0036.6 GiB  0006.7 GiB
+xxeb39-dmf-mds1   Yes        2025-07-28T20:47:04  0377.0 GiB  0126.9 GiB  0162.7 GiB      0139.4 MiB  0037.1 GiB  0005.7 GiB
+xxeb39-dmf-mds2   Yes        2025-07-28T20:47:04  0377.0 GiB  0012.4 GiB  0145.7 GiB      0139.9 MiB  0131.5 GiB  0009.1 GiB
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:05  0251.1 GiB  0010.5 GiB  0014.0 GiB      0619.5 MiB  0004.6 GiB  0007.4 GiB
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:05  0251.1 GiB  0006.6 GiB  0015.1 GiB      0656.1 MiB  0012.0 GiB  0007.2 GiB
+
+TIME_SYNC: Healthy
+==================
+Node              Healthy    Assessed (AEST)      NTP enabled    NTP synchronized
+----------------  ---------  -------------------  -------------  ------------------
+xxeb37-dmf-zwsa1  Yes        2025-07-28T20:47:19  Yes            Yes
+xxeb37-dmf-zwsa2  Yes        2025-07-28T20:47:19  Yes            Yes
+xxeb38-dmf-zwsc1  Yes        2025-07-28T20:47:20  Yes            Yes
+xxeb38-dmf-zwsc2  Yes        2025-07-28T20:47:21  Yes            Yes
+xxeb39-dmf-db1    Yes        2025-07-28T20:47:21  Yes            Yes
+xxeb39-dmf-db10   Yes        2025-07-28T20:47:21  Yes            Yes
+xxeb39-dmf-db2    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db3    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db4    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db5    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db6    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db7    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db8    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-db9    Yes        2025-07-28T20:47:22  Yes            Yes
+xxeb39-dmf-gpfs1  Yes        2025-07-28T20:47:23  Yes            Yes
+xxeb39-dmf-gpfs2  Yes        2025-07-28T20:47:23  Yes            Yes
+xxeb39-dmf-mds1   Yes        2025-07-28T20:47:23  Yes            Yes
+xxeb39-dmf-mds2   Yes        2025-07-28T20:47:23  Yes            Yes
+xxeb40-dmf-zwsb1  Yes        2025-07-28T20:47:24  Yes            Yes
+xxeb40-dmf-zwsb2  Yes        2025-07-28T20:47:24  Yes            Yes
